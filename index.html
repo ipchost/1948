@@ -3,34 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Hub Russia 2026 - Все нейросети в одном месте</title>
+    <title>AI HUB — Все нейросети в одном месте (РФ 2026)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #050505; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #4ade80, #3b82f6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-primary { background: linear-gradient(90deg, #2563eb, #7c3aed); transition: transform 0.2s, box-shadow 0.2s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
+        .status-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; display: inline-block; margin-right: 6px; box-shadow: 0 0 8px #22c55e; }
+    </style>
 </head>
-<body class="bg-slate-900 text-white font-sans">
-    <div class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            AI БЕЗ ГРАНИЦ
+<body class="text-gray-200">
+
+    <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter">AI <span class="text-blue-500">HUB</span></div>
+        <div class="glass px-4 py-1.5 rounded-full text-xs font-medium flex items-center">
+            <span class="status-dot"></span> СЕРВЕРЫ РФ: ONLINE
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 pt-16 pb-20 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            Нейросети для <span class="gradient-text">России</span> без границ
         </h1>
-        <p class="text-xl text-slate-400 mb-12">Лучшие нейросети мира теперь доступны в РФ без VPN и зарубежных карт. Мы отобрали только рабочие сервисы с оплатой в рублях.</p>
-        
-        <div class="grid md:grid-cols-2 gap-6 text-left">
-            <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-blue-500 transition">
-                <h3 class="text-2xl font-bold mb-2">ChatGPT o1 + Claude 3.5</h3>
-                <p class="text-slate-400 mb-4">Полный доступ к топовым текстовым моделям. Без ограничений по IP.</p>
-                <a href="ТВОЯ_ПАРТНЕРСКАЯ_ССЫЛКА_1" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold transition">Запустить бесплатно</a>
+        <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+            Забудь про блокировки, иностранные карты и сложные настройки. Мы собрали лучшие ИИ мира, работающие в РФ на 100%.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#explore" class="btn-primary px-8 py-4 rounded-2xl font-bold text-lg">Начать работу</a>
+            <a href="https://t.me/ТВОЙ_КАНАЛ" class="glass px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/5 transition">Наш Telegram</a>
+        </div>
+    </header>
+
+    <main id="explore" class="max-w-6xl mx-auto px-6 pb-32">
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-blue-500/50 transition">
+                <div>
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400 font-bold">GPT</div>
+                    <h3 class="text-2xl font-bold mb-3">ChatGPT o1-pro</h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Самая мощная модель для кодинга, учебы и сложных задач. Без VPN и лимитов.</p>
+                </div>
+                <a href="ТВОЯ_ССЫЛКА_1" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Открыть доступ</a>
             </div>
 
-            <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-emerald-500 transition">
-                <h3 class="text-2xl font-bold mb-2">Midjourney v7 + DALL-E 3</h3>
-                <p class="text-slate-400 mb-4">Генерация артов через удобный интерфейс. Оплата картой МИР.</p>
-                <a href="ТВОЯ_ПАРТНЕРСКАЯ_ССЫЛКА_2" class="inline-block bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-lg font-semibold transition">Создать шедевр</a>
+            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-purple-500/50 transition">
+                <div>
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-purple-400 font-bold">MJ</div>
+                    <h3 class="text-2xl font-bold mb-3">Midjourney v7</h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Генерация фотореалистичных изображений. Оплата любой картой РФ прямо внутри.</p>
+                </div>
+                <a href="ТВОЯ_ССЫЛКА_2" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Создать арт</a>
             </div>
-        </div>
 
-        <div class="mt-20 p-8 bg-blue-900/20 rounded-3xl border border-blue-500/30">
-            <h2 class="text-3xl font-bold mb-4">Срочно: Список обновляется каждые 24 часа</h2>
-            <p class="text-slate-300">Подпишись, чтобы не потерять доступ к рабочим шлюзам.</p>
+            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-orange-500/50 transition">
+                <div>
+                    <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6 text-orange-400 font-bold">CL</div>
+                    <h3 class="text-2xl font-bold mb-3">Claude 3.5 Sonnet</h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Идеально пишет тексты на русском языке. Лучший помощник для копирайтеров.</p>
+                </div>
+                <a href="ТВОЯ_ССЫЛКА_3" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Начать чат</a>
+            </div>
+
+            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-emerald-500/50 transition">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 text-emerald-400 font-bold">V</div>
+                    <h3 class="text-2xl font-bold mb-3">Video AI (Luma/Pika)</h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Создание профессиональных видео из текста за 2 минуты. Весь функционал в РФ.</p>
+                </div>
+                <a href="ТВОЯ_ССЫЛКА_4" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Сделать видео</a>
+            </div>
+
+            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-yellow-500/50 transition text-center">
+                 <div class="flex flex-col items-center py-6">
+                    <p class="text-gray-400 mb-4 uppercase tracking-widest text-xs">Скоро добавим</p>
+                    <h3 class="text-xl font-bold opacity-50 italic underline decoration-yellow-500">Sora Video Gen</h3>
+                 </div>
+            </div>
+
+             <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-red-500/50 transition">
+                <div>
+                    <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 text-red-400 font-bold">M</div>
+                    <h3 class="text-2xl font-bold mb-3">Suno / Udio (Music)</h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Пиши хиты за секунды. Генерация песен со словами. Полностью на русском.</p>
+                </div>
+                <a href="ТВОЯ_ССЫЛКА_5" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Написать хит</a>
+            </div>
+
         </div>
-    </div>
+    </main>
+
+    <footer class="border-t border-white/10 py-12 text-center text-gray-500 text-sm">
+        <p>© 2026 AI HUB RUSSIA. Все права защищены. Пользуйтесь лучшим.</p>
+    </footer>
+
 </body>
-  </html>
+</html>
