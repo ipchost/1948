@@ -2,647 +2,489 @@
 <html lang="ru" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>AI HUB 2026 — Главный Портал Нейросетей в РФ | ChatGPT, Midjourney, Claude, Sora</title>
-    <meta name="description" content="Ультимативный доступ к мировым нейросетям в России. 100% без VPN, оплата любыми картами РФ. GPT-o1, Claude 3.5, Midjourney v7 и Sora в одном месте. Официальные API-шлюзы для частных лиц и бизнеса.">
-    <meta name="keywords" content="нейросети в россии 2026, доступ к chatgpt без впн, купить подписку midjourney рф, claude 3.5 sonnet россия, sora видео генерация, нейросеть для кодинга, ии для бизнеса, бесплатные нейросети, обучение промпт-инжинирингу, ai hub russia">
+    <title>AI NEXUS — Экосистема Интеллекта | Прямой доступ к ChatGPT, Midjourney, Claude</title>
+    <meta name="description" content="AI NEXUS — единственный в РФ лицензированный узел доступа к GPT-o1, Claude 3.5 и Sora. Технология Direct-Tunnel: работа без VPN, оплата картами РФ. Профессиональное решение для разработчиков и бизнеса.">
+    <meta name="keywords" content="нейросети 2026, доступ к chatgpt в россии, подписка midjourney v7 купить, claude 4 rf, sora openai доступ, ai для бизнеса москва, нейросети без впн, купить токены gpt">
     
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://ipchost.github.io/1948/">
-
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="AI HUB — Все нейросети мира теперь в твоем кармане">
-    <meta property="og:description" content="Забудь про блокировки. Пользуйся лучшими ИИ планеты через единый шлюз в России.">
-    <meta property="og:url" content="https://ipchost.github.io/1948/">
-    <meta property="og:site_name" content="AI HUB Russia">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1675271591211-126ad94e495d?q=80&w=1200">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "SoftwareApplication",
+          "name": "AI NEXUS Portal",
+          "operatingSystem": "Web, iOS, Android",
+          "applicationCategory": "AI Tool",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "18400" },
+          "offers": { "@type": "Offer", "price": "890.00", "priceCurrency": "RUB" }
+        },
+        {
           "@type": "Organization",
-          "@id": "https://ipchost.github.io/1948/#organization",
-          "name": "AI HUB Russia",
+          "name": "NEXUS AI Laboratory",
           "url": "https://ipchost.github.io/1948/",
-          "logo": "https://ipchost.github.io/1948/logo.png"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://ipchost.github.io/1948/#website",
-          "url": "https://ipchost.github.io/1948/",
-          "name": "AI HUB - Технологический суверенитет",
-          "publisher": {"@id": "https://ipchost.github.io/1948/#organization"}
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Как оплатить ChatGPT в России?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "На портале AI HUB оплата доступна любыми картами банков РФ, включая МИР, а также через СБП."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Нужен ли VPN для доступа к нейросетям?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Нет, наш сервис работает через выделенные прокси-серверы, обеспечивая прямой доступ без VPN."
-              }
-            }
-          ]
+          "logo": "https://ipchost.github.io/1948/logo.png",
+          "contactPoint": { "@type": "ContactPoint", "telephone": "+7-495-AI-NEXUS", "contactType": "customer service" }
         }
       ]
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-dark: #050505;
-            --primary: #3b82f6;
-            --primary-glow: rgba(59, 130, 246, 0.5);
-            --glass: rgba(255, 255, 255, 0.03);
-            --border: rgba(255, 255, 255, 0.08);
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.4);
+            --bg: #030303;
+            --surface: #0a0a0a;
+            --border: rgba(255, 255, 255, 0.06);
         }
         
-        body { font-family: 'Manrope', sans-serif; background-color: var(--bg-dark); color: #f1f5f9; overflow-x: hidden; }
-        h1, h2, h3, .unbounded { font-family: 'Unbounded', sans-serif; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--bg); 
+            color: #fafafa; 
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+        }
 
-        /* Custom UI Components */
-        .glass-panel { background: var(--glass); backdrop-filter: blur(20px); border: 1px solid var(--border); }
-        .hover-trigger:hover .hover-target { opacity: 1; transform: translateY(0); }
-        
-        .animated-gradient-text {
-            background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6, #60a5fa);
-            background-size: 300% auto;
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+
+        /* Эффект "стеклянного" наслоения */
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid var(--border); }
+        .glass-hover:hover { background: rgba(255, 255, 255, 0.04); border-color: rgba(99, 102, 241, 0.3); }
+
+        /* Плавные градиенты для текста */
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #a5a5a5 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: gradient-flow 5s linear infinite;
-        }
-        @keyframes gradient-flow { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
-
-        .neon-button {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 0 0 var(--primary-glow);
-        }
-        .neon-button:hover {
-            box-shadow: 0 0 30px 2px var(--primary-glow);
-            transform: translateY(-2px);
         }
 
-        .category-tab.active { background: var(--primary); color: white; border-color: var(--primary); }
-        
-        /* Shimmer effect for cards */
-        .shimmer-bg {
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-            background-size: 200% 100%;
-            animation: shimmer 2.5s infinite;
+        /* Анимация сканирования для SEO-доверия */
+        .scan-line {
+            width: 100%; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            position: absolute; top: 0; left: 0;
+            animation: scan 3s linear infinite;
         }
-        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        @keyframes scan { 0% { top: 0; opacity: 0; } 50% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--bg-dark); }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+        /* Кнопки в стиле 2026 */
+        .btn-premium {
+            position: relative; overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .btn-premium::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: translateX(-100%); transition: 0.6s;
+        }
+        .btn-premium:hover::before { transform: translateX(100%); }
+        .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -5px var(--accent-glow); }
+
+        /* Скрытая секция для SEO пауков */
+        .seo-hidden { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
     </style>
 </head>
-<body class="antialiased">
+<body class="selection:bg-indigo-500/30">
 
-    <div class="w-full bg-blue-600/10 border-b border-blue-500/20 py-2.5 overflow-hidden relative">
-        <div class="flex whitespace-nowrap animate-marquee">
-            <div class="mx-4 text-[10px] font-bold tracking-widest uppercase">🚀 Внимание: Модели GPT-o1 и Sora X доступны в тестовом режиме для всех пользователей РФ</div>
-            <div class="mx-4 text-[10px] font-bold tracking-widest uppercase">⚡️ Мгновенное пополнение баланса через СБП</div>
-            <div class="mx-4 text-[10px] font-bold tracking-widest uppercase">💎 Скидка 30% на годовые подписки до конца недели</div>
-        </div>
-        <style>
-            @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-            .animate-marquee { display: flex; width: 200%; animation: marquee 30s linear infinite; }
-        </style>
+    <div class="seo-hidden">
+        <h1>Нейросети в России 2026 — Полный список и доступ</h1>
+        <p>Наш портал предоставляет агрегированный доступ к API OpenAI, Anthropic и Midjourney. Мы решаем проблему оплаты подписок для граждан РФ. Используйте ChatGPT o1, Sora, Claude 4 через наш защищенный узел. Самые низкие цены на токены и безлимитные тарифы для бизнеса.</p>
     </div>
 
-    <nav class="fixed top-0 left-0 w-full z-[1000] glass-panel border-b border-white/5 px-6 md:px-12 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-12">
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-xl group-hover:rotate-12 transition-transform duration-500">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <span class="text-2xl font-black tracking-tighter uppercase italic">AI<span class="text-blue-500">HUB</span></span>
+    <div id="loader" class="fixed inset-0 z-[9999] bg-[#030303] flex items-center justify-center transition-opacity duration-700">
+        <div class="relative">
+            <div class="w-12 h-12 border-2 border-indigo-500/20 border-t-indigo-500 rounded-full animate-spin"></div>
+            <div class="mt-4 text-[10px] font-bold tracking-[0.4em] text-slate-500 uppercase">System Initializing</div>
+        </div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-[1000] px-6 py-5">
+        <div class="max-w-6xl mx-auto glass rounded-full px-8 py-3 flex items-center justify-between border-white/5 shadow-2xl">
+            <div class="flex items-center gap-10">
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-2 h-2 bg-indigo-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                    <span class="heading-font text-lg font-bold tracking-tighter uppercase">Nexus<span class="text-indigo-500">AI</span></span>
                 </a>
-                <div class="hidden lg:flex items-center gap-8 text-[11px] font-extrabold uppercase tracking-widest text-slate-400">
-                    <a href="#catalog" class="hover:text-blue-500 transition-colors">Каталог моделей</a>
-                    <a href="#solutions" class="hover:text-blue-500 transition-colors">Для бизнеса</a>
-                    <a href="#compare" class="hover:text-blue-500 transition-colors">Тарифные планы</a>
-                    <a href="#knowledge" class="hover:text-blue-500 transition-colors">Академия ИИ</a>
+                <div class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-widest text-slate-500">
+                    <a href="#ecosystem" class="hover:text-white transition">Экосистема</a>
+                    <a href="#business" class="hover:text-white transition">Business</a>
+                    <a href="#pricing" class="hover:text-white transition">Прайс</a>
+                    <a href="#api" class="hover:text-white transition">API</a>
                 </div>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="https://t.me/your_bot" class="hidden md:flex items-center gap-2 text-xs font-bold text-slate-300 bg-white/5 px-4 py-2.5 rounded-xl border border-white/10 hover:bg-white/10 transition">
-                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> Мониторинг систем
-                </a>
-                <button class="neon-button bg-blue-600 px-7 py-3 rounded-2xl text-xs font-black uppercase tracking-widest text-white">Начать работу</button>
+            <div class="flex items-center gap-6">
+                <a href="#" class="text-[11px] font-bold text-slate-400 hover:text-white transition hidden sm:block">RU / EN</a>
+                <button class="btn-premium bg-indigo-600 px-6 py-2 rounded-full text-[11px] font-black uppercase tracking-widest">Вход</button>
             </div>
         </div>
     </nav>
 
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[120px] -z-10"></div>
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.08),transparent_50%)]"></div>
         
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-            <div class="text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-8">
-                    <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                    </span>
-                    Технологический суверенитет 2026
-                </div>
-                <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.05] tracking-tighter">
-                    Твой билет в мир <br>
-                    <span class="animated-gradient-text italic underline decoration-blue-500/20">Нейро-Будущего</span>
-                </h1>
-                <p class="text-lg md:text-xl text-slate-400 mb-12 max-w-xl leading-relaxed">
-                    Забудь про сложные схемы. Мы объединили лучшие интеллекты планеты в одну экосистему. Доступ к ChatGPT, Midjourney и Sora из России без VPN, за 60 секунд.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-                    <button class="neon-button bg-white text-black px-10 py-5 rounded-[2rem] font-black text-lg shadow-2xl hover:bg-blue-600 hover:text-white transition-all">Получить доступ сейчас</button>
-                    <button class="glass-panel px-10 py-5 rounded-[2rem] font-black text-lg border border-white/10 hover:bg-white/5 transition-all">Смотреть демо-видео</button>
-                </div>
-                
-                <div class="mt-16 flex items-center gap-8 justify-center lg:justify-start">
-                    <div class="flex -space-x-3">
-                        <img src="https://i.pravatar.cc/100?u=a" class="w-12 h-12 rounded-full border-4 border-slate-950">
-                        <img src="https://i.pravatar.cc/100?u=b" class="w-12 h-12 rounded-full border-4 border-slate-950">
-                        <img src="https://i.pravatar.cc/100?u=c" class="w-12 h-12 rounded-full border-4 border-slate-950">
-                        <div class="w-12 h-12 rounded-full border-4 border-slate-950 bg-slate-800 flex items-center justify-center text-[10px] font-bold">+12k</div>
-                    </div>
-                    <div class="text-left">
-                        <div class="flex items-center gap-1">
-                            <svg class="w-4 h-4 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <span class="text-sm font-black tracking-tighter">4.9/5.0</span>
-                        </div>
-                        <p class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Рейтинг сообщества РФ</p>
-                    </div>
-                </div>
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full glass border-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-[0.3em] mb-12 animate-fade-in">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                </span>
+                Direct Access Node v4.0
             </div>
             
-            <div class="relative hidden lg:block">
-                <div class="glass-panel p-2 rounded-[3rem] border-white/5 relative overflow-hidden">
-                    <div class="shimmer-bg absolute inset-0 opacity-10"></div>
-                    <div class="bg-slate-950/80 rounded-[2.5rem] p-10 border border-white/5 shadow-inner">
-                        <div class="flex justify-between items-center mb-10">
-                            <div class="flex gap-1.5">
-                                <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
-                            </div>
-                            <span class="text-[10px] font-bold text-slate-600 uppercase tracking-widest">Active Session: Moscow Node</span>
-                        </div>
-                        <div class="space-y-6">
-                            <div class="space-y-2">
-                                <p class="text-[10px] text-blue-500 font-bold uppercase tracking-widest italic">User Prompt</p>
-                                <p class="text-sm font-medium text-slate-300 bg-white/5 p-4 rounded-2xl italic">"Сгенерируй видеоролик о будущем Москвы 2050 в стиле киберпанк через Sora..."</p>
-                            </div>
-                            <div class="space-y-2">
-                                <p class="text-[10px] text-emerald-500 font-bold uppercase tracking-widest italic">AI HUB Processor</p>
-                                <div class="p-4 bg-emerald-500/5 rounded-2xl border border-emerald-500/10">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                                        <p class="text-xs font-mono text-emerald-400">Rendering frame 482/1200... (82.1 FPS)</p>
-                                    </div>
-                                    <div class="mt-4 w-full bg-white/5 h-1.5 rounded-full overflow-hidden">
-                                        <div class="w-[65%] h-full bg-emerald-500 shadow-[0_0_10px_#10b981]"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 border-y border-white/5 bg-slate-900/20">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            <div class="space-y-2">
-                <h3 class="text-3xl md:text-5xl font-black text-white italic">24/7</h3>
-                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Аптайм сервисов</p>
-            </div>
-            <div class="space-y-2">
-                <h3 class="text-3xl md:text-5xl font-black text-blue-500">50+</h3>
-                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Топовых нейросетей</p>
-            </div>
-            <div class="space-y-2">
-                <h3 class="text-3xl md:text-5xl font-black text-white italic">0ms</h3>
-                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Задержка сети в РФ</p>
-            </div>
-            <div class="space-y-2">
-                <h3 class="text-3xl md:text-5xl font-black text-emerald-500">₽0</h3>
-                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Комиссия на вход</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="catalog" class="py-32 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-10">
-                <div class="max-w-2xl text-center md:text-left">
-                    <h2 class="text-4xl md:text-7xl font-black mb-6 tracking-tighter uppercase italic">Экосистема <br><span class="text-blue-500">Интеллекта</span></h2>
-                    <p class="text-slate-400 text-lg">Единый интерфейс для всех задач: от написания кода до голливудских спецэффектов.</p>
-                </div>
-                <div class="flex flex-wrap bg-white/5 p-1.5 rounded-2xl border border-white/10 gap-1">
-                    <button onclick="filterCatalog('all')" class="category-tab active px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all">Все</button>
-                    <button onclick="filterCatalog('text')" class="category-tab px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all text-slate-400 hover:text-white">Текст</button>
-                    <button onclick="filterCatalog('visual')" class="category-tab px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all text-slate-400 hover:text-white">Визуал</button>
-                    <button onclick="filterCatalog('video')" class="category-tab px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all text-slate-400 hover:text-white">Видео</button>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="catalog-grid">
-                
-                <article class="catalog-item glass-panel p-10 rounded-[2.5rem] border-white/5 group hover:border-blue-500/50 transition-all duration-700 relative overflow-hidden" data-cat="text">
-                    <div class="shimmer-bg absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity"></div>
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-2xl">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
-                        </div>
-                        <div class="text-[10px] font-bold text-slate-500 uppercase font-mono tracking-tighter italic">V. 1.0.2-Stable</div>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 group-hover:text-blue-400 transition-colors tracking-tighter italic">ChatGPT o1-Pro</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Машина для глубоких рассуждений. Решает сложнейший кодинг, математику уровня PhD и пишет осмысленные тексты без воды.</p>
-                    <ul class="space-y-4 mb-10 text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                        <li class="flex items-center gap-3"><span class="text-emerald-500">●</span> 128k контекстное окно</li>
-                        <li class="flex items-center gap-3"><span class="text-emerald-500">●</span> Без цензуры для РФ</li>
-                    </ul>
-                    <a href="ТВОЯ_ССЫЛКА_1" class="block w-full text-center py-4 bg-white text-black rounded-2xl font-black uppercase text-xs hover:bg-blue-600 hover:text-white transition-all shadow-xl">Запустить интеллект</a>
-                </article>
-
-                <article class="catalog-item glass-panel p-10 rounded-[2.5rem] border-white/5 group hover:border-purple-500/50 transition-all duration-700 relative overflow-hidden" data-cat="visual">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center text-white">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div class="px-3 py-1 bg-purple-500/10 rounded-lg text-purple-400 text-[9px] font-bold tracking-[0.2em] uppercase">Art-Grade</div>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 group-hover:text-purple-400 transition-colors tracking-tighter italic uppercase">Midjourney v7</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Эталон визуального искусства. Генерация лиц с сохранением личности, создание 3D-макетов и веб-дизайна в один промпт.</p>
-                    <ul class="space-y-4 mb-10 text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                        <li class="flex items-center gap-3"><span class="text-emerald-500">●</span> Raw Mode / Styling v7</li>
-                        <li class="flex items-center gap-3"><span class="text-emerald-500">●</span> Оплата любой картой РФ</li>
-                    </ul>
-                    <a href="ТВОЯ_ССЫЛКА_2" class="block w-full text-center py-4 bg-white text-black rounded-2xl font-black uppercase text-xs hover:bg-purple-600 hover:text-white transition-all shadow-xl">Создать холст</a>
-                </article>
-
-                <article class="catalog-item glass-panel p-10 rounded-[2.5rem] border-white/5 group hover:border-emerald-500/50 transition-all duration-700 relative overflow-hidden" data-cat="video">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-emerald-600 rounded-2xl flex items-center justify-center text-white">
-                            <span class="text-2xl font-black italic">S</span>
-                        </div>
-                        <div class="px-3 py-1 bg-red-500/10 rounded-lg text-red-500 text-[9px] font-bold tracking-[0.2em] uppercase animate-pulse italic underline">Limited Access</div>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 group-hover:text-emerald-400 transition-colors tracking-tighter italic">Sora X 2026</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Первая в мире нейросеть, понимающая физику. Генерация видео до 120 секунд в качестве 4K Cinema. Весь потенциал OpenAI Sora в РФ.</p>
-                    <ul class="space-y-4 mb-10 text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                        <li class="flex items-center gap-3"><span class="text-emerald-500">●</span> 60 FPS / ProRes 4444</li>
-                        <li class="flex items-center gap-3"><span class="text-emerald-500">●</span> Глобальный доступ</li>
-                    </ul>
-                    <a href="ТВОЯ_ССЫЛКА_3" class="block w-full text-center py-4 bg-white text-black rounded-2xl font-black uppercase text-xs hover:bg-emerald-600 hover:text-white transition-all shadow-xl">Рендерить ролик</a>
-                </article>
-                
-                <article class="catalog-item glass-panel p-10 rounded-[2.5rem] border-white/5 group hover:border-orange-500/50 transition-all duration-700 relative overflow-hidden" data-cat="text">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center text-white font-black italic text-2xl">C</div>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 group-hover:text-orange-400 transition-colors tracking-tighter italic">Claude 3.5 Sonnet</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Лучший интеллект для работы с текстами на русском. Невероятный уровень эмпатии и анализа данных без галлюцинаций.</p>
-                    <a href="ТВОЯ_ССЫЛКА_4" class="block w-full text-center py-4 bg-white/5 border border-white/10 rounded-2xl font-black uppercase text-xs hover:bg-orange-600 hover:text-white transition-all shadow-xl">Анализ данных</a>
-                </article>
-
-                <article class="catalog-item glass-panel p-10 rounded-[2.5rem] border-white/5 group hover:border-indigo-500/50 transition-all duration-700 relative overflow-hidden" data-cat="text">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center text-white font-black italic text-2xl uppercase">DS</div>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 group-hover:text-indigo-400 transition-colors tracking-tighter italic">DeepSeek V3 Pro</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Открытый код, закрытые возможности. Король кодинга 2026 года. Пишет архитектуры за 10 секунд.</p>
-                    <a href="ТВОЯ_ССЫЛКА_5" class="block w-full text-center py-4 bg-white/5 border border-white/10 rounded-2xl font-black uppercase text-xs hover:bg-indigo-600 hover:text-white transition-all shadow-xl italic underline font-black">Open Interface</a>
-                </article>
-
-                <article class="catalog-item glass-panel p-10 rounded-[2.5rem] border-white/5 group hover:border-red-500/50 transition-all duration-700 relative overflow-hidden" data-cat="audio">
-                    <div class="flex justify-between items-start mb-8 text-red-500">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-black mb-4 group-hover:text-red-400 transition-colors tracking-tighter italic">Suno & Udio 2.0</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Генерация полноценных музыкальных альбомов. Любые стили, идеальный вокал на русском, права принадлежат вам.</p>
-                    <a href="ТВОЯ_ССЫЛКА_6" class="block w-full text-center py-4 bg-white/5 border border-white/10 rounded-2xl font-black uppercase text-xs hover:bg-red-600 hover:text-white transition-all shadow-xl">Написать хит</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="compare" class="py-32 bg-slate-900/40">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl md:text-6xl font-black mb-20 text-center tracking-tighter uppercase italic underline decoration-blue-500/30">Сравнительный анализ топ-моделей</h2>
-            <div class="overflow-x-auto rounded-[3rem] border border-white/10 glass-panel shadow-2xl">
-                <table class="w-full text-left border-collapse min-w-[800px]">
-                    <thead>
-                        <tr class="bg-white/5">
-                            <th class="p-10 text-[10px] font-black uppercase tracking-widest text-slate-500">Характеристика</th>
-                            <th class="p-10 text-xl font-black italic">GPT-o1 Pro</th>
-                            <th class="p-10 text-xl font-black italic">Midjourney v7</th>
-                            <th class="p-10 text-xl font-black italic text-orange-400">Claude 3.5</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                        <tr class="border-t border-white/5 hover:bg-white/2 transition">
-                            <td class="p-10 font-bold uppercase text-[11px] tracking-wider">Логика и Рассуждения</td>
-                            <td class="p-10 text-emerald-400 font-bold">Лидер (10/10)</td>
-                            <td class="p-10 text-slate-500">Низкая</td>
-                            <td class="p-10 font-bold">Высокая (9/10)</td>
-                        </tr>
-                        <tr class="border-t border-white/5 hover:bg-white/2 transition">
-                            <td class="p-10 font-bold uppercase text-[11px] tracking-wider italic">Креативный текст</td>
-                            <td class="p-10">Хорошо</td>
-                            <td class="p-10 text-slate-500">Нет</td>
-                            <td class="p-10 text-emerald-400 font-bold italic underline">Лучший выбор (10/10)</td>
-                        </tr>
-                        <tr class="border-t border-white/5 hover:bg-white/2 transition">
-                            <td class="p-10 font-bold uppercase text-[11px] tracking-wider">Генерация фото</td>
-                            <td class="p-10 text-slate-400 italic">DALL-E 3 (Базово)</td>
-                            <td class="p-10 text-emerald-400 font-bold">Абсолютный лидер</td>
-                            <td class="p-10 text-slate-500">Нет</td>
-                        </tr>
-                        <tr class="border-t border-white/5 hover:bg-white/2 transition">
-                            <td class="p-10 font-bold uppercase text-[11px] tracking-wider">Цена за сессию в РФ</td>
-                            <td class="p-10 font-mono">~14.50 ₽</td>
-                            <td class="p-10 font-mono">~9.00 ₽</td>
-                            <td class="p-10 font-mono italic">~12.00 ₽</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <section id="knowledge" class="py-32">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl md:text-6xl font-black mb-20 italic">База Знаний & AI Академия</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <article class="group cursor-pointer">
-                    <div class="relative h-64 rounded-[2rem] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1675271591211-126ad94e495d?q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 px-3 py-1 bg-blue-600 rounded-lg text-[10px] font-black uppercase tracking-widest italic">Мануал</span>
-                    </div>
-                    <h4 class="text-xl font-black mb-3 group-hover:text-blue-500 transition-colors uppercase italic tracking-tighter leading-tight">Как запустить Sora в РФ в 2026 году?</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Полный гайд по обходу ограничений через выделенные шлюзы AI HUB. Настройка за 5 минут.</p>
-                    <a href="#" class="text-[10px] font-black uppercase text-blue-400 tracking-widest border-b border-blue-400 italic underline">Читать далее →</a>
-                </article>
-
-                <article class="group cursor-pointer">
-                    <div class="relative h-64 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4638d9980?q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 px-3 py-1 bg-purple-600 rounded-lg text-[10px] font-black uppercase tracking-widest italic italic underline">Промпты</span>
-                    </div>
-                    <h4 class="text-xl font-black mb-3 group-hover:text-purple-500 transition-colors italic tracking-tighter uppercase leading-tight italic underline">Топ-50 промптов для фотореализма</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4 italic underline italic underline">Копируй и вставляй в Midjourney v7 для получения кинематографических кадров.</p>
-                    <a href="#" class="text-[10px] font-black uppercase text-purple-400 tracking-widest border-b border-purple-400 italic italic underline">Открыть список →</a>
-                </article>
-
-                <article class="group cursor-pointer">
-                    <div class="relative h-64 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale italic underline italic underline">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 px-3 py-1 bg-emerald-600 rounded-lg text-[10px] font-black uppercase tracking-widest italic">Бизнес</span>
-                    </div>
-                    <h4 class="text-xl font-black mb-3 group-hover:text-emerald-500 transition-colors tracking-tighter leading-tight italic underline italic underline italic underline uppercase">ИИ-агенты: как заменить 10 сотрудников одним скриптом</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4 italic italic underline italic underline italic underline">Разбор реального кейса автоматизации техподдержки на базе DeepSeek V3.</p>
-                    <a href="#" class="text-[10px] font-black uppercase text-emerald-400 tracking-widest border-b border-emerald-400 italic underline italic underline italic underline">Изучить кейс →</a>
-                </article>
-
-                <article class="group cursor-pointer italic italic underline italic underline italic underline italic underline">
-                    <div class="relative h-64 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
-                        <div class="w-full h-full bg-slate-900 flex items-center justify-center italic italic underline italic underline italic underline font-black text-6xl text-slate-800">API</div>
-                    </div>
-                    <h4 class="text-xl font-black mb-3 group-hover:text-slate-200 tracking-tighter leading-tight uppercase italic underline italic underline">Интеграция по API для разработчиков РФ</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Единый эндпоинт для доступа ко всем нейросетям мира с оплатой по факту использования.</p>
-                    <a href="#" class="text-[10px] font-black uppercase text-slate-400 tracking-widest border-b border-slate-400 italic underline italic underline italic underline italic underline">Документация →</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="py-32 bg-blue-600 rounded-[5rem] mx-6 my-20">
-        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center text-white">
-            <div>
-                <h2 class="text-5xl md:text-7xl font-black mb-10 leading-[1.1] italic tracking-tighter italic underline italic underline">Сколько стоит <br>твоё время?</h2>
-                <p class="text-blue-100 text-lg mb-12 italic underline italic underline">Нейросети — это не игрушки, это мощный финансовый рычаг. Посчитай свою выгоду за 30 секунд.</p>
-                <div class="flex items-center gap-6">
-                    <div class="p-6 bg-white/10 rounded-3xl border border-white/20">
-                        <span class="block text-4xl font-black italic underline italic underline">96%</span>
-                        <span class="text-[9px] uppercase font-bold tracking-[0.2em] opacity-60">Экономия времени</span>
-                    </div>
-                    <div class="p-6 bg-white/10 rounded-3xl border border-white/20 italic underline italic underline italic underline italic underline">
-                        <span class="block text-4xl font-black italic underline italic underline italic underline">3.5x</span>
-                        <span class="text-[9px] uppercase font-bold tracking-[0.2em] opacity-60">Рост дохода</span>
-                    </div>
-                </div>
-            </div>
+            <h1 class="heading-font text-5xl md:text-8xl font-bold tracking-tighter leading-[0.95] mb-10 text-gradient">
+                Интеллект без границ. <br>
+                Будущее без VPN.
+            </h1>
             
-            <div class="bg-slate-950 p-10 rounded-[3rem] shadow-2xl border border-white/5">
-                <div class="space-y-10">
-                    <div>
-                        <label class="block text-[10px] font-black uppercase tracking-widest mb-6 opacity-50 italic italic underline italic underline">Средняя цена часа (₽)</label>
-                        <input type="range" min="500" max="10000" step="500" value="1500" class="w-full accent-blue-500" id="rate-slider">
-                        <div class="flex justify-between mt-4 font-mono font-bold text-blue-500 italic italic underline"><span id="rate-display">1500</span> ₽/час</div>
-                    </div>
-                    <div>
-                        <label class="block text-[10px] font-black uppercase tracking-widest mb-6 opacity-50 italic italic underline italic underline">Рутинных задач (час/мес)</label>
-                        <input type="range" min="10" max="160" value="40" class="w-full accent-blue-500 italic underline" id="hours-slider">
-                        <div class="flex justify-between mt-4 font-mono font-bold text-blue-500 italic italic underline italic underline italic underline italic underline"><span id="hours-display">40</span> ч.</div>
-                    </div>
-                    <div class="pt-8 border-t border-white/5 text-center italic underline">
-                        <span class="text-[10px] uppercase font-bold opacity-40 mb-2 block italic underline italic underline">Чистая прибыль с ИИ:</span>
-                        <div class="text-6xl font-black text-emerald-400 tracking-tighter italic italic underline italic underline" id="roi-display">48,000 ₽</div>
-                    </div>
-                </div>
+            <p class="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl font-light leading-relaxed mb-16 italic">
+                Единая точка входа в нейронные сети нового поколения. ChatGPT o1, Midjourney v7 и Sora в одном защищенном шлюзе. Развернуто в России для вашего превосходства.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <button class="btn-premium w-full sm:w-auto bg-white text-black px-12 py-5 rounded-full font-bold text-sm uppercase tracking-widest shadow-xl">Развернуть терминал</button>
+                <button class="btn-premium w-full sm:w-auto glass px-12 py-5 rounded-full font-bold text-sm uppercase tracking-widest border-white/5">Документация</button>
+            </div>
+
+            <div class="mt-24 flex flex-wrap justify-center items-center gap-12 opacity-30 grayscale hover:grayscale-0 transition duration-1000">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" class="h-5 invert" alt="OpenAI">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Anthropic_logo.svg" class="h-5 invert" alt="Anthropic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Google_DeepMind_logo.svg/2560px-Google_DeepMind_logo.svg.png" class="h-5 invert" alt="DeepMind">
+            </div>
+        </div>
+    </header>
+
+    <section class="py-10 border-y border-white/5 bg-white/[0.01]">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-6">
+                <div class="text-2xl font-bold heading-font mb-1" id="stat-1">1.4M</div>
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Запросов/час</div>
+            </div>
+            <div class="p-6 border-l border-white/5">
+                <div class="text-2xl font-bold heading-font mb-1" id="stat-2">99.99%</div>
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Аптайм шлюзов</div>
+            </div>
+            <div class="p-6 border-l border-white/5">
+                <div class="text-2xl font-bold heading-font mb-1" id="stat-3">12ms</div>
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Latency (Moscow)</div>
+            </div>
+            <div class="p-6 border-l border-white/5">
+                <div class="text-2xl font-bold heading-font mb-1 text-indigo-500">0%</div>
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Риск блокировки</div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="py-32">
+    <section id="ecosystem" class="py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="heading-font text-4xl font-bold tracking-tight mb-6">Продуктовая матрица</h2>
+                    <p class="text-slate-500 text-sm leading-relaxed">Мы отобрали только лучшее. Никаких экспериментальных моделей, только промышленный интеллект для реальных результатов завтрашнего дня.</p>
+                </div>
+                <div class="flex gap-2 glass p-1 rounded-full border-white/5">
+                    <button class="px-6 py-2 rounded-full bg-indigo-600 text-[10px] font-bold uppercase tracking-widest">Public</button>
+                    <button class="px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-white transition">Private API</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <article class="glass p-10 rounded-[2.5rem] glass-hover transition-all duration-500 relative group overflow-hidden">
+                    <div class="scan-line opacity-0 group-hover:opacity-100"></div>
+                    <div class="flex justify-between items-start mb-12">
+                        <div class="w-12 h-12 bg-white flex items-center justify-center rounded-2xl shadow-2xl">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <span class="text-[9px] font-bold text-indigo-500 uppercase tracking-[0.2em]">Logic Expert</span>
+                    </div>
+                    <h3 class="heading-font text-2xl font-bold mb-4">ChatGPT o1-Pro</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-10">Модель глубокого мышления. Для аналитики, кодинга и сложных стратегий. Ваша персональная команда экспертов.</p>
+                    <div class="flex items-center justify-between pt-8 border-t border-white/5">
+                        <span class="text-xs font-bold text-slate-300 italic">от 990₽</span>
+                        <a href="ТВОЯ_ССЫЛКА" class="text-[10px] font-black uppercase tracking-widest text-indigo-400 hover:text-white transition italic underline decoration-indigo-500/30">Connect →</a>
+                    </div>
+                </article>
+
+                <article class="glass p-10 rounded-[2.5rem] glass-hover transition-all duration-500 relative group overflow-hidden">
+                    <div class="flex justify-between items-start mb-12">
+                        <div class="w-12 h-12 bg-indigo-600 flex items-center justify-center rounded-2xl shadow-2xl text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <span class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]">Visual Lab</span>
+                    </div>
+                    <h3 class="heading-font text-2xl font-bold mb-4">Midjourney v7.2</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-10">Фотореализм, который невозможно отличить от реальности. Генерация контента уровня голливудских студий.</p>
+                    <div class="flex items-center justify-between pt-8 border-t border-white/5">
+                        <span class="text-xs font-bold text-slate-300 italic">от 1450₽</span>
+                        <a href="ТВОЯ_ССЫЛКА" class="text-[10px] font-black uppercase tracking-widest text-indigo-400 hover:text-white transition italic underline decoration-indigo-500/30">Run Render →</a>
+                    </div>
+                </article>
+
+                <article class="glass p-10 rounded-[2.5rem] glass-hover transition-all duration-500 relative group overflow-hidden">
+                    <div class="flex justify-between items-start mb-12">
+                        <div class="w-12 h-12 bg-orange-500/10 flex items-center justify-center rounded-2xl text-orange-500 border border-orange-500/20">
+                            <span class="font-bold">C</span>
+                        </div>
+                        <span class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]">Humanoid Text</span>
+                    </div>
+                    <h3 class="heading-font text-2xl font-bold mb-4">Claude 3.5 Sonnet</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-10">Самый человечный ИИ. Написание книг, статей и глубоких писем. Идеально понимает русский контекст.</p>
+                    <div class="flex items-center justify-between pt-8 border-t border-white/5">
+                        <span class="text-xs font-bold text-slate-300 italic">от 890₽</span>
+                        <a href="ТВОЯ_ССЫЛКА" class="text-[10px] font-black uppercase tracking-widest text-indigo-400 hover:text-white transition italic underline decoration-indigo-500/30">Start →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="business" class="py-32 bg-indigo-600 rounded-[4rem] mx-6">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+            <h2 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter mb-10 italic">Nexus For Enterprise</h2>
+            <p class="text-indigo-100 text-lg md:text-xl font-light leading-relaxed mb-16">
+                Выводим компании на новый уровень эффективности. Прямые API интеграции, корпоративные аккаунты и оплата по счету (B2B). Забудьте о блокировках инфраструктуры.
+            </p>
+            <div class="grid sm:grid-cols-3 gap-8 text-left">
+                <div class="bg-black/10 p-8 rounded-3xl border border-white/10">
+                    <div class="text-[10px] font-black uppercase tracking-widest mb-4 opacity-60 italic">Reliability</div>
+                    <div class="text-xl font-bold heading-font underline">Спецканалы</div>
+                </div>
+                <div class="bg-black/10 p-8 rounded-3xl border border-white/10">
+                    <div class="text-[10px] font-black uppercase tracking-widest mb-4 opacity-60 italic">Legal</div>
+                    <div class="text-xl font-bold heading-font underline">Договор и УПД</div>
+                </div>
+                <div class="bg-black/10 p-8 rounded-3xl border border-white/10">
+                    <div class="text-[10px] font-black uppercase tracking-widest mb-4 opacity-60 italic">Custom</div>
+                    <div class="text-xl font-bold heading-font underline">Fine-Tuning</div>
+                </div>
+            </div>
+            <button class="mt-20 bg-white text-black px-12 py-5 rounded-full font-black uppercase text-xs tracking-[0.2em] hover:bg-black hover:text-white transition-all">Получить КП для бизнеса</button>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold tracking-tight text-center mb-24">Тарифная сетка</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="glass p-10 rounded-[3rem] border-white/5 flex flex-col items-center text-center">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-8 italic">Индивидуальный</span>
+                    <div class="text-5xl font-bold heading-font mb-4">₽1,490</div>
+                    <div class="text-[10px] font-bold text-slate-600 uppercase mb-12 italic">в месяц</div>
+                    <ul class="space-y-4 text-sm text-slate-400 mb-12 flex-grow italic">
+                        <li>Все нейросети в одном окне</li>
+                        <li>Лимит: 500 запросов/мес</li>
+                        <li>Без VPN</li>
+                        <li class="opacity-30">API доступ</li>
+                    </ul>
+                    <button class="w-full glass py-4 rounded-full text-[10px] font-black uppercase tracking-widest border-white/10 hover:bg-white/5 transition">Выбрать</button>
+                </div>
+
+                <div class="glass p-10 rounded-[3rem] border-indigo-500/30 bg-indigo-500/[0.03] flex flex-col items-center text-center relative scale-105 shadow-2xl">
+                    <div class="absolute -top-4 bg-indigo-600 px-6 py-1 rounded-full text-[8px] font-black uppercase tracking-widest">Most Popular</div>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-indigo-400 mb-8 italic">Профессиональный</span>
+                    <div class="text-5xl font-bold heading-font mb-4">₽3,990</div>
+                    <div class="text-[10px] font-bold text-slate-600 uppercase mb-12 italic">в месяц</div>
+                    <ul class="space-y-4 text-sm text-white mb-12 flex-grow italic">
+                        <li>Приоритет в очереди o1</li>
+                        <li>Безлимитный Midjourney</li>
+                        <li>Ранний доступ к Sora</li>
+                        <li>Техподдержка 24/7</li>
+                        <li>Доступ к базе промптов</li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 py-4 rounded-full text-[10px] font-black uppercase tracking-widest shadow-xl shadow-indigo-500/20">Активировать</button>
+                </div>
+
+                <div class="glass p-10 rounded-[3rem] border-white/5 flex flex-col items-center text-center">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-8 italic">Агентство</span>
+                    <div class="text-5xl font-bold heading-font mb-4 italic">₽9,900</div>
+                    <div class="text-[10px] font-bold text-slate-600 uppercase mb-12 italic">в месяц</div>
+                    <ul class="space-y-4 text-sm text-slate-400 mb-12 flex-grow italic">
+                        <li>До 5 аккаунтов</li>
+                        <li>Полный API доступ</li>
+                        <li>White Label интерфейс</li>
+                        <li>Персональный менеджер</li>
+                    </ul>
+                    <button class="w-full glass py-4 rounded-full text-[10px] font-black uppercase tracking-widest border-white/10 hover:bg-white/5 transition">Выбрать</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl md:text-6xl font-black mb-20 text-center italic uppercase underline decoration-blue-500">Вопросы & Ответы</h2>
-            <div class="space-y-6">
-                
-                <details class="group glass-panel rounded-[2rem] p-8 cursor-pointer hover:border-blue-500/30 transition-all italic underline">
-                    <summary class="flex items-center justify-between font-black text-xl italic italic underline italic underline tracking-tight list-none">
-                        Могу ли я оплатить сервис картой МИР?
-                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
+            <h2 class="heading-font text-3xl font-bold mb-16 text-center italic underline underline-offset-8 decoration-indigo-500">Вопросы & Безопасность</h2>
+            <div class="space-y-4">
+                <details class="group glass rounded-3xl p-8 cursor-pointer hover:border-white/10 transition">
+                    <summary class="flex justify-between items-center font-bold text-sm uppercase tracking-widest list-none">
+                        Безопасно ли использовать Nexus AI?
+                        <span class="w-6 h-6 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
                     </summary>
-                    <div class="mt-8 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-8 italic underline italic underline">
-                        Да, мы полностью поддерживаем российскую платежную систему. Доступна оплата картами МИР, Visa, Mastercard любых банков РФ, а также СБП (Система Быстрых Платежей) и Yandex Pay. Все транзакции проходят через лицензированный эквайринг РФ.
-                    </div>
+                    <p class="mt-6 text-slate-500 text-sm leading-relaxed italic border-t border-white/5 pt-6">
+                        Мы используем технологию сквозного шифрования AES-256. Ваши данные не передаются разработчикам нейросетей для обучения. Мы гарантируем 100% анонимность всех запросов.
+                    </p>
                 </details>
 
-                <details class="group glass-panel rounded-[2rem] p-8 cursor-pointer hover:border-blue-500/30 transition-all italic underline italic underline">
-                    <summary class="flex items-center justify-between font-black text-xl italic italic underline italic underline tracking-tight list-none italic underline">
-                        Какие гарантии безопасности моих данных?
-                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
+                <details class="group glass rounded-3xl p-8 cursor-pointer hover:border-white/10 transition">
+                    <summary class="flex justify-between items-center font-bold text-sm uppercase tracking-widest list-none">
+                        Как работает доступ без VPN?
+                        <span class="w-6 h-6 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
                     </summary>
-                    <div class="mt-8 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-8 italic underline italic underline italic underline">
-                        Мы работаем по стандарту безопасности Enterprise. Ваши диалоги с ИИ полностью конфиденциальны и не используются для обучения моделей. Мы используем прямое API-соединение с шифрованием AES-256.
-                    </div>
+                    <p class="mt-6 text-slate-500 text-sm leading-relaxed italic border-t border-white/5 pt-6">
+                        Наша сеть распределенных прокси-серверов в 12 странах обеспечивает прямой маршрут от вашего браузера до API нейросети. Для вас это выглядит как обычный сайт, работающий с максимальной скоростью в РФ.
+                    </p>
                 </details>
 
-                <details class="group glass-panel rounded-[2rem] p-8 cursor-pointer hover:border-blue-500/30 transition-all italic underline italic underline italic underline">
-                    <summary class="flex items-center justify-between font-black text-xl italic italic underline italic underline tracking-tight list-none italic underline italic underline">
-                        Как получить Sora в России в феврале 2026?
-                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
+                <details class="group glass rounded-3xl p-8 cursor-pointer hover:border-white/10 transition">
+                    <summary class="flex justify-between items-center font-bold text-sm uppercase tracking-widest list-none">
+                        Поддерживается ли оплата картами МИР?
+                        <span class="w-6 h-6 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
                     </summary>
-                    <div class="mt-8 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-8 italic underline italic underline italic underline">
-                        Доступ к Sora предоставляется через наш премиум-шлюз по модели "Early Access". Вы получаете возможность генерации видео без необходимости иметь зарубежный аккаунт OpenAI и VPN. Просто зарегистрируйтесь на платформе и выберите тариф "Cinema Pro".
-                    </div>
+                    <p class="mt-6 text-slate-500 text-sm leading-relaxed italic border-t border-white/5 pt-6">
+                        Да, все платежи проходят через российский эквайринг. Вы можете платить любой картой РФ, через СБП или Yandex Pay. Моментальная активация доступа после транзакции.
+                    </p>
                 </details>
-
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 pt-40 pb-20 border-t border-white/5 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
+    <footer class="bg-[#050505] pt-32 pb-12 border-t border-white/5 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-16 mb-24">
                 <div class="col-span-2">
-                    <a href="#" class="text-4xl font-black mb-8 block italic underline decoration-blue-500 italic underline">AI HUB RUSSIA</a>
-                    <p class="text-slate-500 text-sm max-w-md leading-relaxed mb-10 italic underline italic underline italic underline">
-                        Мы создаем технологическую независимость для миллионов пользователей в России. Весь потенциал мирового Искусственного Интеллекта доступен в один клик. Развиваем культуру ИИ-грамотности с 2023 года.
+                    <a href="#" class="heading-font text-2xl font-bold tracking-tighter uppercase mb-8 block italic">Nexus<span class="text-indigo-500">AI</span> Hub</a>
+                    <p class="text-slate-500 text-xs leading-relaxed max-w-xs mb-10 uppercase font-semibold tracking-wider italic underline">
+                        Технологическая независимость для нового поколения профессионалов. Мы делаем мировые знания доступными каждому.
                     </p>
-                    <div class="flex gap-6">
-                        <a href="#" class="w-12 h-12 rounded-2xl glass-panel flex items-center justify-center hover:bg-blue-600 transition italic italic underline">TG</a>
-                        <a href="#" class="w-12 h-12 rounded-2xl glass-panel flex items-center justify-center hover:bg-blue-600 transition italic italic underline italic underline">VK</a>
-                        <a href="#" class="w-12 h-12 rounded-2xl glass-panel flex items-center justify-center hover:bg-blue-600 transition italic italic underline italic underline italic underline">VC</a>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer text-[10px] font-black">TG</div>
+                        <div class="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer text-[10px] font-black">VC</div>
+                        <div class="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer text-[10px] font-black">GH</div>
                     </div>
                 </div>
                 <div>
-                    <h5 class="font-black text-xs uppercase tracking-[0.2em] mb-10 text-slate-200 italic italic underline italic underline">Инструменты</h5>
-                    <ul class="space-y-5 text-slate-500 text-[11px] font-bold uppercase tracking-widest italic underline italic underline italic underline italic underline">
-                        <li><a href="#" class="hover:text-blue-400 transition underline underline decoration-blue-500">Генерация контента</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition underline underline decoration-emerald-500 italic underline">Deep Coding V3</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition underline underline decoration-purple-500 italic underline italic underline">Visual Art Studio</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition underline underline decoration-orange-500 italic underline italic underline italic underline">Marketing AI</a></li>
+                    <h5 class="text-[10px] font-black uppercase tracking-widest text-white mb-8 italic">Решения</h5>
+                    <ul class="space-y-4 text-[10px] font-bold text-slate-500 uppercase tracking-[0.15em] italic">
+                        <li><a href="#" class="hover:text-indigo-400 transition underline underline-offset-4 decoration-white/10">Текстовые модели</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition underline underline-offset-4 decoration-white/10">Генерация видео</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition underline underline-offset-4 decoration-white/10">AI-Ассистенты</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition underline underline-offset-4 decoration-white/10">API Документация</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h5 class="font-black text-xs uppercase tracking-[0.2em] mb-10 text-slate-200 italic italic underline italic underline italic underline italic underline">Поддержка</h5>
-                    <ul class="space-y-5 text-slate-500 text-[11px] font-bold uppercase tracking-widest italic underline italic underline italic underline italic underline italic underline">
-                        <li><a href="#" class="hover:text-blue-400 transition">Документация API</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition italic italic underline italic underline italic underline">Статус серверов</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition italic italic underline italic underline italic underline italic underline italic underline">Техподдержка 24/7</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition italic underline italic underline italic underline italic underline italic underline italic underline">Публичная оферта</a></li>
+                    <h5 class="text-[10px] font-black uppercase tracking-widest text-white mb-8 italic">Legal</h5>
+                    <ul class="space-y-4 text-[10px] font-bold text-slate-500 uppercase tracking-[0.15em] italic">
+                        <li><a href="#" class="hover:text-indigo-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">User Agreement</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Cookie Settings</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[9px] font-black uppercase tracking-[0.3em] text-slate-700 italic underline italic underline italic underline italic underline italic underline italic underline italic underline">
-                <span>© 2026 AI HUB RUSSIA. DEVELOPED FOR TECHNOLOGICAL SOVEREIGNTY.</span>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[9px] font-bold text-slate-700 uppercase tracking-[0.4em]">
+                <span>© 2026 NEXUS AI LABORATORY. ALL RIGHTS RESERVED.</span>
                 <div class="flex gap-10">
-                    <a href="#" class="hover:text-white italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline">Privacy</a>
-                    <a href="#" class="hover:text-white italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline">Terms</a>
-                    <a href="#" class="hover:text-white italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline underline decoration-blue-500">License</a>
+                    <span class="text-indigo-500">System Status: Online</span>
+                    <span>v.4.0.2 Stable</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // 1. ROI Calculator Logic
-        const rateSlider = document.getElementById('rate-slider');
-        const hoursSlider = document.getElementById('hours-slider');
-        const rateDisplay = document.getElementById('rate-display');
-        const hoursDisplay = document.getElementById('hours-display');
-        const roiDisplay = document.getElementById('roi-display');
+        // Preloader Logic
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(() => loader.style.display = 'none', 700);
+        });
 
-        function updateROI() {
-            const rate = rateSlider.value;
-            const hours = hoursSlider.value;
-            rateDisplay.innerText = rate;
-            hoursDisplay.innerText = hours;
-            const savings = (rate * hours * 0.8).toLocaleString('ru-RU');
-            roiDisplay.innerText = `${savings} ₽`;
-        }
-        rateSlider.addEventListener('input', updateROI);
-        hoursSlider.addEventListener('input', updateROI);
-
-        // 2. Catalog Filtering
-        function filterCatalog(category) {
-            const items = document.querySelectorAll('.catalog-item');
-            const tabs = document.querySelectorAll('.category-tab');
-            
-            tabs.forEach(tab => tab.classList.remove('active', 'bg-blue-600', 'text-white'));
-            event.target.classList.add('active', 'bg-blue-600', 'text-white');
-
-            items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-cat') === category) {
-                    item.style.display = 'block';
-                    item.classList.add('animate-fade-in');
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+        // Stats Simulation (Хитрость для повышения доверия)
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = (progress * (end - start) + start).toFixed(0);
+                if (progress < 1) window.requestAnimationFrame(step);
+            };
+            window.requestAnimationFrame(step);
         }
 
-        // 3. Fake Live Notifications (Social Proof)
-        function spawnNotification() {
-            const cities = ['Москве', 'Санкт-Петербурге', 'Новосибирске', 'Екатеринбурге', 'Казани', 'Краснодаре'];
-            const names = ['Алексей', 'Мария', 'Дмитрий', 'Елена', 'Сергей', 'Анна', 'Виктор'];
-            const apps = ['GPT-o1 Pro', 'Midjourney v7', 'Sora X', 'Claude 3.5'];
-            
-            const city = cities[Math.floor(Math.random() * cities.length)];
-            const name = names[Math.floor(Math.random() * names.length)];
-            const app = apps[Math.floor(Math.random() * apps.length)];
+        const stat1 = document.getElementById('stat-1');
+        // Обновляем числа через 1 сек после загрузки
+        setTimeout(() => {
+            animateValue(stat1, 1000000, 1400000, 2000);
+        }, 1500);
 
-            const toast = document.createElement('div');
-            toast.className = 'fixed bottom-10 left-10 glass-panel p-5 rounded-3xl shadow-2xl z-[5000] flex items-center gap-4 animate-slide-up border-blue-500/20';
-            toast.innerHTML = `
-                <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                <div class="text-[10px] font-black uppercase tracking-widest leading-tight">
-                    <span class="text-blue-400">${name}</span> из <span class="text-white">${city}</span> <br> 
-                    только что активировал <span class="italic underline">${app}</span>
+        // Поведение шапки при скролле
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.paddingTop = '10px';
+                nav.style.paddingBottom = '10px';
+            } else {
+                nav.style.paddingTop = '20px';
+                nav.style.paddingBottom = '20px';
+            }
+        });
+
+        // Fake Live Alerts (Для социального доказательства - Софт-хитрость)
+        function createAlert() {
+            const users = ['Алексей', 'Марина', 'Константин', 'Елена', 'Иван', 'Анна'];
+            const actions = ['подключил GPT-o1 Pro', 'создал видео в Sora', 'активировал Agency тариф', 'настроил API шлюз'];
+            
+            const user = users[Math.floor(Math.random() * users.length)];
+            const action = actions[Math.floor(Math.random() * actions.length)];
+
+            const alert = document.createElement('div');
+            alert.className = 'fixed bottom-10 left-10 glass px-6 py-4 rounded-2xl shadow-2xl z-[5000] flex items-center gap-4 animate-fade-up border-indigo-500/20';
+            alert.innerHTML = `
+                <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
+                <div class="text-[9px] font-bold uppercase tracking-widest leading-tight">
+                    <span class="text-white">${user}</span> <br> 
+                    <span class="text-slate-500">${action}</span>
                 </div>
             `;
-            document.body.appendChild(toast);
+            document.body.appendChild(alert);
+
             setTimeout(() => {
-                toast.classList.add('opacity-0', 'translate-y-10');
-                setTimeout(() => toast.remove(), 1000);
-            }, 4000);
+                alert.style.opacity = '0';
+                alert.style.transform = 'translateY(20px)';
+                setTimeout(() => alert.remove(), 1000);
+            }, 5000);
         }
-        setInterval(spawnNotification, 12000);
+
+        // Запуск уведомлений каждые 20 секунд
+        setInterval(createAlert, 20000);
     </script>
 
     <style>
-        @keyframes slide-up {
-            0% { opacity: 0; transform: translateY(40px); }
-            100% { opacity: 1; transform: translateY(0); }
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .animate-slide-up { animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-        
-        @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-        .animate-fade-in { animation: fade-in 0.8s ease forwards; }
+        .animate-fade-up { animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .animate-fade-in { animation: opacity 1s ease-in; }
     </style>
 
 </body>
