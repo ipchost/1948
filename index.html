@@ -1,103 +1,276 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI HUB — Все нейросети в одном месте (РФ 2026)</title>
+    
+    <title>AI HUB 2026 — Топ 50+ Нейросетей в России без VPN и ограничений</title>
+    <meta name="description" content="Бесплатный каталог нейросетей доступных в РФ. ChatGPT, Midjourney, Claude и Sora без VPN. Сравнение цен, инструкции по запуску и ежедневные обновления.">
+    <meta name="keywords" content="нейросети в россии, чат гпт без впн, оплата нейросетей рф, midjourney купить, бесплатный ии, нейросеть для видео">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="AI HUB — Все нейросети в одном месте">
+    <meta property="og:description" content="Доступ к мировым ИИ технологиям из любой точки РФ.">
+    <meta property="og:type" content="website">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background: #050505; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #4ade80, #3b82f6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-primary { background: linear-gradient(90deg, #2563eb, #7c3aed); transition: transform 0.2s, box-shadow 0.2s; }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
-        .status-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; display: inline-block; margin-right: 6px; box-shadow: 0 0 8px #22c55e; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%); }
+        .glass-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(51, 65, 85, 1); backdrop-filter: blur(12px); }
+        .card-hover:hover { border-color: #3b82f6; transform: translateY(-4px); transition: all 0.3s ease; }
+        .shimmer { position: relative; overflow: hidden; }
+        .shimmer::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03), transparent); transform: rotate(45deg); animation: shimmer 3s infinite; }
+        @keyframes shimmer { 0% { transform: translateX(-100%) rotate(45deg); } 100% { transform: translateX(100%) rotate(45deg); } }
+        .tab-active { background: #3b82f6; color: white; }
     </style>
-</head>
-<body class="text-gray-200">
 
-    <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-        <div class="text-2xl font-extrabold tracking-tighter">AI <span class="text-blue-500">HUB</span></div>
-        <div class="glass px-4 py-1.5 rounded-full text-xs font-medium flex items-center">
-            <span class="status-dot"></span> СЕРВЕРЫ РФ: ONLINE
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AI HUB Russia",
+      "operatingSystem": "Web",
+      "applicationCategory": "MultimediaApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1250"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 glass-card border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold">A</div>
+                <span class="text-xl font-extrabold tracking-tight">AI<span class="text-blue-500">HUB</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#catalog" class="hover:text-blue-400 transition">Каталог</a>
+                <a href="#compare" class="hover:text-blue-400 transition">Сравнение</a>
+                <a href="#blog" class="hover:text-blue-400 transition">Блог</a>
+                <a href="#faq" class="hover:text-blue-400 transition">Помощь</a>
+            </div>
+            <a href="https://t.me/your_bot" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-sm font-bold transition">Личный кабинет</a>
         </div>
     </nav>
 
-    <header class="max-w-4xl mx-auto px-6 pt-16 pb-20 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-            Нейросети для <span class="gradient-text">России</span> без границ
-        </h1>
-        <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-            Забудь про блокировки, иностранные карты и сложные настройки. Мы собрали лучшие ИИ мира, работающие в РФ на 100%.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="#explore" class="btn-primary px-8 py-4 rounded-2xl font-bold text-lg">Начать работу</a>
-            <a href="https://t.me/ТВОЙ_КАНАЛ" class="glass px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/5 transition">Наш Telegram</a>
-        </div>
-    </header>
-
-    <main id="explore" class="max-w-6xl mx-auto px-6 pb-32">
-        <div class="grid md:grid-cols-3 gap-6">
+    <section class="relative pt-32 pb-20 overflow-hidden">
+        <div class="hero-gradient absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-6 animate-bounce">
+                🚀 ОБНОВЛЕНИЕ БАЗЫ: ФЕВРАЛЬ 2026
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter">
+                Все мировые ИИ <br> <span class="text-blue-500 underline decoration-blue-500/30">теперь в России</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Единая точка доступа к ChatGPT-o1, Midjourney v7 и Claude 3.5. Без VPN, без иностранных карт, с поддержкой русского языка и оплатой в рублях.
+            </p>
             
-            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-blue-500/50 transition">
-                <div>
-                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400 font-bold">GPT</div>
-                    <h3 class="text-2xl font-bold mb-3">ChatGPT o1-pro</h3>
-                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Самая мощная модель для кодинга, учебы и сложных задач. Без VPN и лимитов.</p>
-                </div>
-                <a href="ТВОЯ_ССЫЛКА_1" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Открыть доступ</a>
+            <div class="max-w-2xl mx-auto relative mb-20">
+                <input type="text" placeholder="Какую задачу нужно решить? (напр. 'написать код' или 'создать лого')" class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-blue-500 transition shadow-2xl">
+                <button class="absolute right-3 top-3 bg-blue-600 px-6 py-2 rounded-xl font-bold">Найти</button>
             </div>
-
-            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-purple-500/50 transition">
-                <div>
-                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-purple-400 font-bold">MJ</div>
-                    <h3 class="text-2xl font-bold mb-3">Midjourney v7</h3>
-                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Генерация фотореалистичных изображений. Оплата любой картой РФ прямо внутри.</p>
-                </div>
-                <a href="ТВОЯ_ССЫЛКА_2" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Создать арт</a>
-            </div>
-
-            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-orange-500/50 transition">
-                <div>
-                    <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6 text-orange-400 font-bold">CL</div>
-                    <h3 class="text-2xl font-bold mb-3">Claude 3.5 Sonnet</h3>
-                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Идеально пишет тексты на русском языке. Лучший помощник для копирайтеров.</p>
-                </div>
-                <a href="ТВОЯ_ССЫЛКА_3" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Начать чат</a>
-            </div>
-
-            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-emerald-500/50 transition">
-                <div>
-                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 text-emerald-400 font-bold">V</div>
-                    <h3 class="text-2xl font-bold mb-3">Video AI (Luma/Pika)</h3>
-                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Создание профессиональных видео из текста за 2 минуты. Весь функционал в РФ.</p>
-                </div>
-                <a href="ТВОЯ_ССЫЛКА_4" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Сделать видео</a>
-            </div>
-
-            <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-yellow-500/50 transition text-center">
-                 <div class="flex flex-col items-center py-6">
-                    <p class="text-gray-400 mb-4 uppercase tracking-widest text-xs">Скоро добавим</p>
-                    <h3 class="text-xl font-bold opacity-50 italic underline decoration-yellow-500">Sora Video Gen</h3>
-                 </div>
-            </div>
-
-             <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-red-500/50 transition">
-                <div>
-                    <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 text-red-400 font-bold">M</div>
-                    <h3 class="text-2xl font-bold mb-3">Suno / Udio (Music)</h3>
-                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Пиши хиты за секунды. Генерация песен со словами. Полностью на русском.</p>
-                </div>
-                <a href="ТВОЯ_ССЫЛКА_5" class="w-full text-center py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold transition">Написать хит</a>
-            </div>
-
         </div>
-    </main>
+    </section>
 
-    <footer class="border-t border-white/10 py-12 text-center text-gray-500 text-sm">
-        <p>© 2026 AI HUB RUSSIA. Все права защищены. Пользуйтесь лучшим.</p>
+    <section id="catalog" class="max-w-7xl mx-auto px-6 mb-12">
+        <div class="flex flex-wrap gap-4 justify-center">
+            <button class="tab-active px-6 py-2 rounded-full border border-slate-700 font-semibold transition hover:border-blue-500">Все</button>
+            <button class="px-6 py-2 rounded-full border border-slate-700 font-semibold transition hover:border-blue-500">Текст & Код</button>
+            <button class="px-6 py-2 rounded-full border border-slate-700 font-semibold transition hover:border-blue-500">Генерация фото</button>
+            <button class="px-6 py-2 rounded-full border border-slate-700 font-semibold transition hover:border-blue-500">Видео & 3D</button>
+            <button class="px-6 py-2 rounded-full border border-slate-700 font-semibold transition hover:border-blue-500">Для бизнеса</button>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 mb-32">
+        
+        <article class="glass-card p-8 rounded-[32px] card-hover shimmer">
+            <div class="flex justify-between items-start mb-6">
+                <div class="p-3 bg-green-500/10 rounded-2xl text-green-500 font-bold text-xl uppercase italic">GPT</div>
+                <div class="text-xs text-slate-500 font-mono">Status: <span class="text-green-400 font-bold">Online</span></div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">ChatGPT v5.0 (o1)</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Последняя модель от OpenAI. Решает задачи уровня кандидата наук. Идеально для программистов и студентов.</p>
+            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+                <li class="flex items-center gap-2 text-emerald-400">✓ Без VPN и прокси</li>
+                <li class="flex items-center gap-2 text-emerald-400">✓ Принимает карты РФ</li>
+                <li class="flex items-center gap-2 text-emerald-400">✓ Бесплатный лимит 10/день</li>
+            </ul>
+            <a href="ТВОЯ_ССЫЛКА_1" class="block w-full text-center bg-white text-black py-4 rounded-2xl font-extrabold hover:bg-blue-500 hover:text-white transition">Запустить нейросеть</a>
+        </article>
+
+        <article class="glass-card p-8 rounded-[32px] card-hover shimmer">
+            <div class="flex justify-between items-start mb-6">
+                <div class="p-3 bg-purple-500/10 rounded-2xl text-purple-500 font-bold text-xl uppercase italic">MJ</div>
+                <div class="text-xs text-slate-500 font-mono">Status: <span class="text-green-400 font-bold">Online</span></div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Midjourney v7</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Лучшая визуализация в мире. Фотореализм, логотипы, веб-дизайн. Полная интеграция с российскими шлюзами.</p>
+            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+                <li class="flex items-center gap-2 text-emerald-400">✓ Галерея промптов</li>
+                <li class="flex items-center gap-2 text-emerald-400">✓ Высокая скорость</li>
+                <li class="flex items-center gap-2 text-emerald-400">✓ Оплата через СБП</li>
+            </ul>
+            <a href="ТВОЯ_ССЫЛКА_2" class="block w-full text-center bg-white text-black py-4 rounded-2xl font-extrabold hover:bg-purple-500 hover:text-white transition">Генерировать фото</a>
+        </article>
+
+        <article class="glass-card p-8 rounded-[32px] card-hover shimmer">
+            <div class="flex justify-between items-start mb-6">
+                <div class="p-3 bg-orange-500/10 rounded-2xl text-orange-400 font-bold text-xl uppercase italic">CL</div>
+                <div class="text-xs text-slate-500 font-mono">Status: <span class="text-green-400 font-bold">Online</span></div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Claude 3.5 Sonnet</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Король текстов и анализа данных. Пишет как живой человек. Самый большой контекст (200k+ токенов).</p>
+            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+                <li class="flex items-center gap-2 text-emerald-400">✓ Понимает документы PDF</li>
+                <li class="flex items-center gap-2 text-emerald-400">✓ Не блокирует по IP</li>
+                <li class="flex items-center gap-2 text-emerald-400">✓ Встроенный антиплагиат</li>
+            </ul>
+            <a href="ТВОЯ_ССЫЛКА_3" class="block w-full text-center bg-white text-black py-4 rounded-2xl font-extrabold hover:bg-orange-500 hover:text-white transition">Открыть Claude</a>
+        </article>
+
+    </section>
+
+    <section id="compare" class="max-w-7xl mx-auto px-6 mb-32">
+        <h2 class="text-4xl font-extrabold mb-12 text-center italic">Какую нейросеть выбрать в 2026?</h2>
+        <div class="overflow-x-auto glass-card rounded-3xl">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-slate-800/50">
+                        <th class="p-6 font-bold">Параметр</th>
+                        <th class="p-6 font-bold text-blue-400">ChatGPT-o1</th>
+                        <th class="p-6 font-bold text-purple-400">Midjourney</th>
+                        <th class="p-6 font-bold text-orange-400">Claude 3.5</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm text-slate-300">
+                    <tr class="border-t border-slate-800">
+                        <td class="p-6 font-semibold">Сложные расчеты</td>
+                        <td class="p-6">Лидер (10/10)</td>
+                        <td class="p-6">Нет</td>
+                        <td class="p-6">Средне (7/10)</td>
+                    </tr>
+                    <tr class="border-t border-slate-800">
+                        <td class="p-6 font-semibold">Креатив / Текст</td>
+                        <td class="p-6">Хорошо</td>
+                        <td class="p-6">Нет</td>
+                        <td class="p-6">Лучший (10/10)</td>
+                    </tr>
+                    <tr class="border-t border-slate-800">
+                        <td class="p-6 font-semibold">Генерация фото</td>
+                        <td class="p-6">Базово (DALL-E)</td>
+                        <td class="p-6">Профи (10/10)</td>
+                        <td class="p-6">Нет</td>
+                    </tr>
+                    <tr class="border-t border-slate-800">
+                        <td class="p-6 font-semibold">Цена в РФ (мес)</td>
+                        <td class="p-6">~1500₽</td>
+                        <td class="p-6">~1200₽</td>
+                        <td class="p-6">~1400₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="blog" class="max-w-7xl mx-auto px-6 mb-32">
+        <h2 class="text-4xl font-extrabold mb-12 italic">Полезно знать</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 glass-card rounded-3xl">
+                <span class="text-blue-500 text-xs font-bold uppercase mb-4 block">Обучение</span>
+                <h3 class="text-2xl font-bold mb-4">Как правильно писать промпты в 2026 году?</h3>
+                <p class="text-slate-400 mb-6">Разбираем технику "Chain of Thought", которая заставляет ИИ думать в 10 раз глубже. Бесплатные примеры внутри.</p>
+                <a href="#" class="text-blue-400 font-bold border-b border-blue-400">Читать статью →</a>
+            </div>
+            <div class="p-8 glass-card rounded-3xl">
+                <span class="text-blue-500 text-xs font-bold uppercase mb-4 block">Безопасность</span>
+                <h3 class="text-2xl font-bold mb-4">Как оплачивать зарубежные сервисы из РФ?</h3>
+                <p class="text-slate-400 mb-6">Обзор 5 рабочих платежных шлюзов, которые не блокируют транзакции и не требуют открытия карт в Казахстане.</p>
+                <a href="#" class="text-blue-400 font-bold border-b border-blue-400">Читать статью →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="max-w-3xl mx-auto px-6 mb-32 text-center">
+        <h2 class="text-4xl font-extrabold mb-12">Частые вопросы</h2>
+        <div class="text-left space-y-6">
+            <div class="p-6 glass-card rounded-2xl">
+                <h4 class="font-bold mb-2">Почему ваш доступ работает без VPN?</h4>
+                <p class="text-slate-400 text-sm">Мы используем официальные API шлюзы и зеркала на российских серверах, которые напрямую связаны с дата-центрами OpenAI и Anthropic.</p>
+            </div>
+            <div class="p-6 glass-card rounded-2xl">
+                <h4 class="font-bold mb-2">Это законно на территории РФ?</h4>
+                <p class="text-slate-400 text-sm">Да, использование нейросетей не запрещено. Мы лишь помогаем пользователям получить доступ к технологиям в рамках действующего законодательства.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="flex items-center gap-2 mb-6 text-2xl font-bold">AI HUB</div>
+                <p class="text-slate-500 text-sm mb-6 max-w-sm">Миссия проекта — сделать передовые технологии искусственного интеллекта доступными для каждого жителя России, невзирая на санкции и технические барьеры.</p>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 bg-slate-800 rounded-full"></div>
+                    <div class="w-10 h-10 bg-slate-800 rounded-full"></div>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6">Разделы</h5>
+                <ul class="text-slate-500 text-sm space-y-4 italic">
+                    <li><a href="#">Анализ данных</a></li>
+                    <li><a href="#">Генерация видео</a></li>
+                    <li><a href="#">AI в маркетинге</a></li>
+                    <li><a href="#">Нейросети для детей</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6">Поддержка</h5>
+                <ul class="text-slate-500 text-sm space-y-4 underline">
+                    <li><a href="#">Техподдержка 24/7</a></li>
+                    <li><a href="#">Стать партнером</a></li>
+                    <li><a href="#">API для бизнеса</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
+    <div id="activity-toast" class="fixed bottom-6 left-6 glass-card p-4 rounded-2xl shadow-2xl flex items-center gap-4 transition-all opacity-0 translate-y-10 z-[100]">
+        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-xl">👤</div>
+        <div>
+            <div class="text-[10px] text-slate-500 font-bold uppercase">Прямо сейчас</div>
+            <div class="text-sm font-bold"><span id="user-name">Дмитрий</span> получил доступ к GPT-o1</div>
+        </div>
+    </div>
+
+    <script>
+        // Скрипт для создания иллюзии живого сайта
+        const names = ["Иван", "Мария", "Алексей", "Елена", "Сергей", "Анна", "Виктор", "Ольга"];
+        const toasts = document.getElementById('activity-toast');
+        const userName = document.getElementById('user-name');
+
+        setInterval(() => {
+            userName.innerText = names[Math.floor(Math.random() * names.length)];
+            toasts.style.opacity = '1';
+            toasts.style.translateY = '0';
+            setTimeout(() => {
+                toasts.style.opacity = '0';
+            }, 3000);
+        }, 12000);
+    </script>
 
 </body>
 </html>
