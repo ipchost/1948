@@ -3,259 +3,388 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>AI NEXUS ELITE — №1 Агрегатор Нейросетей в РФ | 30+ Моделей | Без VPN</title>
+    <meta name="description" content="Профессиональный доступ к ChatGPT o1, Midjourney v7, Claude 4, Sora и еще 25+ нейросетям. Единый интерфейс, оплата картами РФ, защита данных Enterprise-уровня. Работайте без ограничений и VPN.">
+    <meta name="keywords" content="нейросети 2026, доступ к chatgpt o1, midjourney v7 россия, claude 4 opus купить, openai sora доступ рф, нейросети для бизнеса, генерация видео ии, подписка на нейросети в россии">
     
-    <title>AI HUB — Единая Экосистема Нейросетей в РФ | 25+ Моделей (GPT-o1, MJ v7, Sora)</title>
-    <meta name="description" content="Единственный в РФ лицензированный шлюз доступа к 25+ топовым нейросетям мира. ChatGPT-o1, Claude 4, Midjourney v7, Sora. Без VPN, оплата картами РФ. Технологическое превосходство для профи.">
-    <meta name="keywords" content="нейросети 2026 список, доступ к chatgpt o1 россия, midjourney v7 купить подписку, claude 4 rf, sora openai доступ москва, лучшие нейросети для бизнеса, нейросети без впн">
-    
+    <meta property="og:title" content="AI NEXUS ELITE — Будущее Интеллекта">
+    <meta property="og:description" content="Все топовые ИИ мира в одном шлюзе. Технология Direct-Path 2026.">
+    <meta property="og:image" content="https://your-domain.com/preview.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
             --accent: #3b82f6;
-            --accent-glow: rgba(59, 130, 246, 0.4);
-            --bg: #020617;
-            --surface: #0f172a;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --bg: #010208;
+            --card-bg: rgba(15, 23, 42, 0.6);
+            --border: rgba(255, 255, 255, 0.08);
         }
+
+        /* Base Reset & Aesthetics */
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            background: var(--bg); 
-            color: #f1f5f9;
+            background-color: var(--bg); 
+            color: #e2e8f0; 
+            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
+
         .heading-font { font-family: 'Space Grotesk', sans-serif; }
-        
-        /* Изюминка: Эффект "Глубокого космоса" для фона */
-        .hero-gradient {
-            background: radial-gradient(circle at 50% -20%, #1e293b 0%, #020617 70%);
-        }
 
-        /* Продвинутые карточки-стекло */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-        .glass-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: var(--accent);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px -20px var(--accent-glow);
-        }
-
-        /* Кастомный скролл */
-        ::-webkit-scrollbar { width: 5px; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: var(--bg); }
-        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; transition: 0.3s; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-        .active-tab { background: var(--accent) !important; color: white !important; }
-        
-        /* Анимация сканирования для карт */
-        @keyframes scan { 0% { top: -100%; } 100% { top: 200%; } }
-        .scan-effect::after {
-            content: ""; position: absolute; width: 100%; height: 50%;
-            background: linear-gradient(to bottom, transparent, rgba(59, 130, 246, 0.1), transparent);
-            left: 0; animation: scan 4s linear infinite;
+        /* Advanced Background Logic */
+        .neural-mesh {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: -1;
         }
+
+        /* Glassmorphism Classes */
+        .glass { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(20px); border: 1px solid var(--border); }
+        .glass-hover:hover { background: rgba(255, 255, 255, 0.03); border-color: var(--accent); transform: translateY(-4px); transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+
+        /* Specialized Animations */
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .shimmer-text {
+            background: linear-gradient(90deg, #fff, #3b82f6, #fff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 5s linear infinite;
+        }
+
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+
+        /* Search Ranking Booster - Hidden Content for Spiders */
+        .seo-cluster { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
+
+        /* Dynamic Cards Overlay */
+        .card-overlay { position: absolute; inset: 0; background: radial-gradient(circle at center, var(--accent-glow) 0%, transparent 70%); opacity: 0; transition: 0.5s; }
+        .glass-hover:hover .card-overlay { opacity: 0.15; }
+
+        /* Custom Checkmark for Premium look */
+        .check-icon { width: 14px; height: 14px; background: var(--accent); display: inline-block; clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%); }
     </style>
 </head>
-<body class="selection:bg-blue-500/30">
+<body>
 
-    <nav class="fixed top-0 w-full z-[100] border-b border-white/5 bg-slate-950/80 backdrop-blur-xl">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <div class="flex items-center gap-12">
-                <a href="#" class="flex items-center gap-2 group">
-                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold rotate-12 group-hover:rotate-0 transition-transform">A</div>
-                    <span class="heading-font text-xl font-bold tracking-tighter">AI<span class="text-blue-500">HUB</span></span>
+    <div id="loader" class="fixed inset-0 z-[9999] bg-black flex items-center justify-center transition-opacity duration-1000">
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-[2px] bg-slate-800 relative overflow-hidden">
+                <div class="absolute inset-0 bg-blue-500 animate-[shimmer_2s_infinite]"></div>
+            </div>
+            <div class="mt-4 text-[9px] font-bold tracking-[0.5em] text-slate-500 uppercase">Nexus Core Loading</div>
+        </div>
+    </div>
+
+    <div class="neural-mesh"></div>
+
+    <nav class="fixed top-0 w-full z-[1000] p-4 md:p-6">
+        <div class="max-w-7xl mx-auto glass rounded-2xl md:rounded-full px-6 md:px-10 py-4 flex items-center justify-between shadow-2xl">
+            <div class="flex items-center gap-10">
+                <a href="/" class="flex items-center gap-2 group">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:rotate-12 transition-transform duration-500">
+                        <span class="font-black text-white text-lg">A</span>
+                    </div>
+                    <span class="heading-font text-xl font-bold tracking-tighter uppercase italic">Nexus<span class="text-blue-500">AI</span></span>
                 </a>
                 <div class="hidden lg:flex items-center gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-400">
-                    <a href="#catalog" class="hover:text-blue-400 transition">Каталог моделей (25+)</a>
-                    <a href="#business" class="hover:text-blue-400 transition">Бизнес</a>
-                    <a href="#pricing" class="hover:text-blue-400 transition">Тарифы</a>
+                    <a href="#models" class="hover:text-blue-400 transition-colors">Библиотека (30+)</a>
+                    <a href="#workflow" class="hover:text-blue-400 transition-colors">Как это работает</a>
+                    <a href="#enterprise" class="hover:text-blue-400 transition-colors">Business</a>
+                    <a href="#faq" class="hover:text-blue-400 transition-colors">FAQ</a>
                 </div>
             </div>
             <div class="flex items-center gap-6">
-                <span class="hidden md:flex items-center gap-2 text-[10px] font-bold text-emerald-500 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    API: OPTIMAL
-                </span>
-                <button class="bg-blue-600 hover:bg-blue-500 px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-blue-500/20">Войти</button>
+                <div class="hidden sm:flex flex-col items-end">
+                    <span class="text-[9px] font-black text-blue-500 uppercase tracking-widest">System Status</span>
+                    <span class="text-[10px] font-bold text-emerald-400">Operational: 99.9%</span>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-xl md:rounded-full text-xs font-black uppercase tracking-widest transition-all shadow-xl shadow-blue-600/20 active:scale-95">Консоль</button>
             </div>
         </div>
     </nav>
 
-    <header class="hero-gradient pt-44 pb-32 px-6 overflow-hidden">
-        <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative">
-            <div class="absolute -top-20 -left-20 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px]"></div>
-            
-            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-10 animate-fade-in">
-                🚀 Технологический суверенитет 2026
+    <header class="relative min-h-screen flex items-center justify-center pt-24 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full glass border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-12 animate-float">
+                <span class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_#3b82f6]"></span>
+                Next-Gen AI Gateway 2026
             </div>
-            
-            <h1 class="heading-font text-5xl md:text-8xl font-bold tracking-tighter leading-[0.95] mb-8">
-                Все нейросети мира. <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">В одной подписке.</span>
+
+            <h1 class="heading-font text-5xl md:text-8xl lg:text-[110px] font-bold tracking-tighter leading-[0.85] mb-12">
+                Сверхсила ИИ <br>
+                <span class="shimmer-text">в ваших руках.</span>
             </h1>
-            
-            <p class="max-w-2xl text-slate-400 text-lg md:text-xl font-light leading-relaxed mb-12">
-                Забудьте про 20 разных подписок и VPN. Мы объединили 25+ ведущих ИИ-моделей в мощный хаб с оплатой любой картой РФ.
+
+            <p class="max-w-3xl mx-auto text-slate-400 text-lg md:text-2xl font-light leading-relaxed mb-16 italic">
+                Единый узел доступа к 30+ мощнейшим нейросетям планеты. Без VPN, без зарубежных карт, без ограничений. От кода до голливудского видео — всё здесь.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-6 mb-20 w-full justify-center">
-                <a href="#catalog" class="px-12 py-5 bg-white text-black rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1 text-center">Открыть консоль управления</a>
-                <a href="#" class="px-12 py-5 glass-card rounded-2xl font-bold text-sm uppercase tracking-widest text-center border-white/10">Документация API</a>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <button class="w-full sm:w-auto px-12 py-6 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-blue-600 hover:text-white transition-all duration-500">Получить мгновенный доступ</button>
+                <button class="w-full sm:w-auto px-12 py-6 glass rounded-2xl font-black text-xs uppercase tracking-[0.2em] border-white/5 hover:border-white/20 transition-all duration-500">Смотреть демо шлюза</button>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl p-2 glass-card rounded-3xl">
-                <div class="p-6 text-center">
-                    <div class="text-2xl font-bold heading-font">25+</div>
-                    <div class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Активных моделей</div>
-                </div>
-                <div class="p-6 text-center border-l border-white/5">
-                    <div class="text-2xl font-bold heading-font">0.02s</div>
-                    <div class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Latency (API)</div>
-                </div>
-                <div class="p-6 text-center border-l border-white/5">
-                    <div class="text-2xl font-bold heading-font">145k</div>
-                    <div class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Юзеров в РФ</div>
-                </div>
-                <div class="p-6 text-center border-l border-white/5">
-                    <div class="text-2xl font-bold heading-font text-blue-500">RU</div>
-                    <div class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Локализация</div>
+            <div class="mt-24 pt-10 border-t border-white/5">
+                <p class="text-[10px] font-bold text-slate-600 uppercase tracking-[0.5em] mb-10 italic">Протоколы интеграции подтверждены</p>
+                <div class="flex flex-wrap justify-center items-center gap-12 opacity-20 hover:opacity-100 transition-opacity duration-1000 grayscale hover:grayscale-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" class="h-6 invert" alt="OpenAI">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Anthropic_logo.svg" class="h-6 invert" alt="Anthropic">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-6 invert" alt="Google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="h-6 invert" alt="Apple">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-6 invert" alt="Amazon">
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="catalog" class="py-32 px-6">
+    <section id="models" class="py-32 px-6 bg-gradient-to-b from-transparent via-slate-900/10 to-transparent">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-                <div>
-                    <h2 class="heading-font text-4xl font-bold mb-4 italic">Главная Витрина Моделей</h2>
-                    <p class="text-slate-500">Интеллектуальный шлюз к лучшим разработкам планеты.</p>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-10">
+                <div class="max-w-2xl">
+                    <h2 class="heading-font text-4xl md:text-6xl font-bold tracking-tighter mb-6 italic underline underline-offset-8 decoration-blue-500">Библиотека Nexus 30+</h2>
+                    <p class="text-slate-500 text-lg">Мы отобрали только те модели, которые реально меняют рынок в 2026 году. Отсутствие "мусора" — наше главное правило.</p>
                 </div>
-                <div class="flex flex-wrap gap-2 p-1.5 glass-card rounded-2xl border-white/5">
-                    <button class="px-6 py-2.5 rounded-xl text-[10px] font-bold uppercase active-tab" onclick="filterModels('all')">Все (25+)</button>
-                    <button class="px-6 py-2.5 rounded-xl text-[10px] font-bold uppercase text-slate-500 hover:text-white transition" onclick="filterModels('text')">Текст</button>
-                    <button class="px-6 py-2.5 rounded-xl text-[10px] font-bold uppercase text-slate-500 hover:text-white transition" onclick="filterModels('image')">Фото</button>
-                    <button class="px-6 py-2.5 rounded-xl text-[10px] font-bold uppercase text-slate-500 hover:text-white transition" onclick="filterModels('video')">Видео</button>
-                    <button class="px-6 py-2.5 rounded-xl text-[10px] font-bold uppercase text-slate-500 hover:text-white transition" onclick="filterModels('audio')">Аудио</button>
+                <div class="flex flex-wrap gap-3 glass p-2 rounded-2xl border-white/5">
+                    <button class="px-6 py-3 rounded-xl bg-blue-600 text-[10px] font-black uppercase tracking-widest text-white">Все (32)</button>
+                    <button class="px-6 py-3 rounded-xl hover:bg-white/5 text-[10px] font-black uppercase tracking-widest text-slate-500 transition">Текст</button>
+                    <button class="px-6 py-3 rounded-xl hover:bg-white/5 text-[10px] font-black uppercase tracking-widest text-slate-500 transition">Графика</button>
+                    <button class="px-6 py-3 rounded-xl hover:bg-white/5 text-[10px] font-black uppercase tracking-widest text-slate-500 transition">Видео</button>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="modelsGrid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group scan-effect" data-category="text">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-white flex items-center justify-center rounded-2xl">
-                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="card-overlay"></div>
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-12">
+                            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-xl">
+                                <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                            </div>
+                            <span class="text-[9px] font-black text-blue-500 uppercase tracking-widest bg-blue-500/10 px-3 py-1 rounded-full">Top logic</span>
                         </div>
-                        <span class="text-[9px] font-bold text-blue-500 uppercase">Logic King</span>
-                    </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">ChatGPT o1-Pro</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Математическое мышление и сложный кодинг. Версия 2026 с глубиной анализа PhD.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-white/5 transition">Запустить модель</a>
-                </article>
-
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="image">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-blue-600 flex items-center justify-center rounded-2xl">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <span class="text-[9px] font-bold text-slate-500 uppercase italic">V7.2 Stable</span>
-                    </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">Midjourney Ultra</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Гиперреализм и сохранение консистентности персонажа. Лучший выбор дизайнеров.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-blue-600 transition">Открыть холст</a>
-                </article>
-
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="video">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-purple-600/20 text-purple-500 flex items-center justify-center rounded-2xl font-bold">V</div>
-                        <span class="text-[9px] font-bold text-red-500 uppercase animate-pulse">Hot News</span>
-                    </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">OpenAI Sora X</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Генерация видео до 2 минут. Физика реального мира и идеальный монтаж.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-purple-500/20 rounded-xl text-[10px] font-bold uppercase text-purple-400 hover:bg-purple-600/10 transition">Создать сцену</a>
-                </article>
-
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="text">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-orange-600/20 text-orange-500 flex items-center justify-center rounded-2xl font-bold italic">C</div>
-                        <span class="text-[9px] font-bold text-slate-500 uppercase">Human-like</span>
-                    </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">Claude 4 Opus</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Самая человечная модель для текстов. Анализ документов до 1млн токенов.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-white/5 transition">Начать чат</a>
-                </article>
-
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="text">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-blue-400/20 text-blue-400 flex items-center justify-center rounded-2xl font-bold">G</div>
-                    </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">Gemini 2.0 Ultra</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Мультимодальный гигант от Google. Работает с видео и звуком в реальном времени.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-white/5 transition">Запуск</a>
-                </article>
-
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="audio">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-emerald-600/20 text-emerald-500 flex items-center justify-center rounded-2xl">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                        <h3 class="heading-font text-2xl font-bold mb-4">OpenAI GPT-o1</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-10 italic">Вершина логического вывода 2026. Для сложных задач, архитектуры кода и PhD-аналитики.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[10px] font-bold text-slate-400">v1.2 Stable</span>
+                            <span class="text-[10px] font-black text-blue-400 uppercase tracking-tighter hover:underline cursor-pointer italic">Запустить →</span>
                         </div>
                     </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">Suno v4 Music</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Создание песен в 8K качестве. Любой вокал, любые инструменты. Права ваши.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-white/5 transition">Написать трек</a>
                 </article>
 
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="text">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-yellow-600/20 text-yellow-500 flex items-center justify-center rounded-2xl font-bold">D</div>
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="card-overlay"></div>
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-12">
+                            <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <span class="text-[9px] font-black text-purple-400 uppercase tracking-widest bg-purple-500/10 px-3 py-1 rounded-full">Art God</span>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold mb-4">Midjourney v7.2</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-10 italic">Гиперреализм нового порядка. 8K текстуры и сохранение консистентности лиц на 100%.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[10px] font-bold text-slate-400">Turbo Mode</span>
+                            <span class="text-[10px] font-black text-blue-400 uppercase tracking-tighter italic">Открыть холст →</span>
+                        </div>
                     </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">DeepSeek Coder v3</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Лучший кодер 2026 года. Исправляет баги быстрее, чем вы их создаете.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-white/5 transition">Кодить</a>
                 </article>
 
-                <article class="glass-card p-8 rounded-[2rem] relative overflow-hidden group" data-category="video">
-                    <div class="flex justify-between items-start mb-10">
-                        <div class="w-12 h-12 bg-pink-600/20 text-pink-500 flex items-center justify-center rounded-2xl font-bold">K</div>
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="card-overlay"></div>
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-12">
+                            <div class="w-14 h-14 bg-orange-600 rounded-2xl flex items-center justify-center shadow-xl">
+                                <span class="font-bold text-2xl">C</span>
+                            </div>
+                            <span class="text-[9px] font-black text-orange-400 uppercase tracking-widest bg-orange-500/10 px-3 py-1 rounded-full">Human Touch</span>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold mb-4">Claude 4 Opus</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-10 italic">Самый "человечный" ИИ для написания лонгридов, книг и глубокого анализа контекста.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[10px] font-bold text-slate-400">1M Context</span>
+                            <span class="text-[10px] font-black text-blue-400 uppercase tracking-tighter italic">Начать диалог →</span>
+                        </div>
                     </div>
-                    <h3 class="heading-font text-xl font-bold mb-3">Kling AI Pro</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">Реалистичная анимация лиц и динамические экшн-сцены. Будущее кино.</p>
-                    <a href="#" class="block w-full py-4 text-center border border-white/5 rounded-xl text-[10px] font-bold uppercase hover:bg-white/5 transition">Рендер</a>
                 </article>
 
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group border-emerald-500/30 bg-emerald-500/5">
+                    <div class="card-overlay"></div>
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-12">
+                            <div class="w-14 h-14 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-xl animate-pulse">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg>
+                            </div>
+                            <span class="text-[9px] font-black text-emerald-400 uppercase tracking-widest bg-emerald-500/20 px-3 py-1 rounded-full">Video Elite</span>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold mb-4">OpenAI Sora X</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-10 italic">Генерация видео до 2-х минут. Физика реального мира и качество уровня Netflix.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[10px] font-bold text-emerald-500 underline">Early Access</span>
+                            <span class="text-[10px] font-black text-blue-400 uppercase tracking-tighter italic">Рендер →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="relative z-10">
+                        <h3 class="heading-font text-xl font-bold mb-4">Gemini 2.0 Ultra</h3>
+                        <p class="text-slate-500 text-xs italic mb-10">Мультимодальный гигант Google. Мгновенная работа с видео, аудио и кодом одновременно.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[9px] font-bold text-slate-600 italic">Multimodal Core</span>
+                            <a href="#" class="text-[10px] font-black text-blue-500 italic">Active</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="relative z-10">
+                        <h3 class="heading-font text-xl font-bold mb-4">DeepSeek Coder v3</h3>
+                        <p class="text-slate-500 text-xs italic mb-10">Новый король программирования. Обходит GPT-4 в сложных алгоритмах и отладке Python/C++.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[9px] font-bold text-slate-600 italic">Code God</span>
+                            <a href="#" class="text-[10px] font-black text-blue-500 italic">Active</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="relative z-10">
+                        <h3 class="heading-font text-xl font-bold mb-4">Kling AI Pro</h3>
+                        <p class="text-slate-500 text-xs italic mb-10">Лучшая анимация персонажей и лиц. Идеально для рекламных креативов и TikTok.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[9px] font-bold text-slate-600 italic">Face Sync</span>
+                            <a href="#" class="text-[10px] font-black text-blue-500 italic">Active</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="glass-card glass p-8 rounded-[2.5rem] relative overflow-hidden glass-hover group">
+                    <div class="relative z-10">
+                        <h3 class="heading-font text-xl font-bold mb-4">Udio Music 2.0</h3>
+                        <p class="text-slate-500 text-xs italic mb-10">Генерация треков в Hi-Res. Гиттары, вокал и сведение, неотличимые от студии.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                            <span class="text-[9px] font-bold text-slate-600 italic">Audio Master</span>
+                            <a href="#" class="text-[10px] font-black text-blue-500 italic">Active</a>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">9. Stable Diffusion 4.0 XL</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">10. Grok 3 (X-Alpha)</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">11. Mistral Large 3</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">12. Llama 4 (Meta Cloud)</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">13. Perplexity Pro Search</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">14. ElevenLabs Voice V3</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">15. Runway Gen-4</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">16. Flux Pro 1.1</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">17. Suno v4 AI</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">18. Cohere Command R+</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">19. DALL-E 4</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">20. HeyGen Avatar V2</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">21. Pika 2.0 Video</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">22. Leonardo AI Phoenix</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">23. Groq LPU Speedtest</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">24. AlphaCode 3</div>
+                    <div class="glass p-4 rounded-xl text-[10px] font-bold text-slate-500 uppercase italic border-white/5">25. Nexus Custom FineTune</div>
                 </div>
-            
-            <div class="mt-20 p-8 glass-card rounded-[2.5rem] border-blue-500/20 text-center">
-                <span class="text-[10px] font-black uppercase tracking-[0.5em] text-blue-400 mb-4 block">И это только начало</span>
-                <p class="text-slate-300 italic">Всего в хабе доступно 32 специализированные модели. Список обновляется ежедневно.</p>
+
             </div>
         </div>
     </section>
 
-    <section id="business" class="py-32 bg-blue-600 rounded-[4rem] mx-6">
-        <div class="max-w-4xl mx-auto px-6 text-center text-white">
-            <h2 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter mb-10">Enterprise Solutions</h2>
-            <p class="text-blue-100 text-xl font-light mb-16 italic">
-                Мы помогаем бизнесу в РФ интегрировать ИИ напрямую в рабочие процессы. Работа по договору, закрывающие документы, API без задержек.
-            </p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 bg-black/10 rounded-3xl border border-white/10 hover:bg-black/20 transition cursor-help">
-                    <div class="text-3xl font-bold mb-2">0%</div>
-                    <p class="text-[10px] uppercase font-bold opacity-60">Риск блокировки</p>
+    <section id="workflow" class="py-32 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="heading-font text-4xl md:text-5xl font-bold text-center mb-24 italic">Технология Direct-Tunnel 2026</h2>
+            <div class="grid md:grid-cols-3 gap-16 relative">
+                <div class="hidden lg:block absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500/20 to-transparent -translate-y-1/2"></div>
+                
+                <div class="relative z-10 text-center flex flex-col items-center">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mb-8 border-blue-500/40 shadow-2xl shadow-blue-500/10">
+                        <span class="heading-font text-3xl font-bold">01</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 uppercase italic tracking-tighter">Единый Шлюз</h4>
+                    <p class="text-slate-500 text-sm italic leading-relaxed">Вы заходите на наш защищенный домен. Никаких VPN, прокси или туннелей не требуется с вашей стороны.</p>
                 </div>
-                <div class="p-8 bg-black/10 rounded-3xl border border-white/10 hover:bg-black/20 transition cursor-help">
-                    <div class="text-3xl font-bold mb-2">∞</div>
-                    <p class="text-[10px] uppercase font-bold opacity-60">Безлимитные токены</p>
+
+                <div class="relative z-10 text-center flex flex-col items-center">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mb-8 border-blue-500/40 shadow-2xl shadow-blue-500/10">
+                        <span class="heading-font text-3xl font-bold text-blue-500">02</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 uppercase italic tracking-tighter">AI-Роутинг</h4>
+                    <p class="text-slate-500 text-sm italic leading-relaxed">Система Nexus перенаправляет ваш запрос через 12 распределенных серверов в Европе и Азии для обхода лимитов.</p>
                 </div>
-                <div class="p-8 bg-black/10 rounded-3xl border border-white/10 hover:bg-black/20 transition cursor-help">
-                    <div class="text-3xl font-bold mb-2">24/7</div>
-                    <p class="text-[10px] uppercase font-bold opacity-60">Support Expert</p>
+
+                <div class="relative z-10 text-center flex flex-col items-center">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mb-8 border-blue-500/40 shadow-2xl shadow-blue-500/10">
+                        <span class="heading-font text-3xl font-bold">03</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 uppercase italic tracking-tighter">Мгновенный Ответ</h4>
+                    <p class="text-slate-500 text-sm italic leading-relaxed">Вы получаете ответ от нейросети в реальном времени. Вся оплата уже включена в тариф, комиссии 0%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="enterprise" class="py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass bg-blue-600 rounded-[3rem] p-12 md:p-24 flex flex-col md:flex-row items-center gap-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-1/2 h-full bg-black/20 skew-x-12 translate-x-32"></div>
+                
+                <div class="flex-1 relative z-10">
+                    <span class="text-[10px] font-black uppercase tracking-[0.5em] text-blue-200 mb-6 block underline decoration-white/20">B2B ИНТЕГРАЦИЯ</span>
+                    <h2 class="heading-font text-4xl md:text-7xl font-bold tracking-tighter text-white mb-10 italic">Масштабируйте интеллект своей компании.</h2>
+                    <ul class="space-y-6 mb-12">
+                        <li class="flex items-center gap-4">
+                            <span class="check-icon !bg-white"></span>
+                            <span class="text-blue-100 font-bold italic">Оплата по безналу (Счет/УПД)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="check-icon !bg-white"></span>
+                            <span class="text-blue-100 font-bold italic">Доступ по API для вашего софта</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="check-icon !bg-white"></span>
+                            <span class="text-blue-100 font-bold italic">Корпоративное обучение команды</span>
+                        </li>
+                    </ul>
+                    <button class="bg-white text-blue-600 px-12 py-5 rounded-full font-black uppercase text-xs tracking-widest hover:bg-black hover:text-white transition-all">Связаться с отделом B2B</button>
+                </div>
+                <div class="flex-1 relative z-10 hidden lg:block">
+                    <div class="glass p-8 rounded-3xl border-white/20 bg-white/5 rotate-3 scale-110">
+                        <div class="text-[9px] font-mono text-blue-200 mb-4 tracking-tighter">SYSTEM LOG: ANALYZING COMPANY ROI...</div>
+                        <div class="h-2 w-full bg-white/10 rounded-full mb-6 overflow-hidden">
+                            <div class="h-full bg-white w-4/5 animate-[shimmer_3s_infinite]"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5 text-center">
+                                <div class="text-2xl font-bold text-white">+340%</div>
+                                <div class="text-[8px] text-blue-200 uppercase font-black">Efficiency</div>
+                            </div>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5 text-center">
+                                <div class="text-2xl font-bold text-white">-80%</div>
+                                <div class="text-[8px] text-blue-200 uppercase font-black">Time Cost</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,147 +392,209 @@
 
     <section id="pricing" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="heading-font text-4xl font-bold text-center mb-24 underline decoration-blue-500 underline-offset-8">Прозрачная стоимость</h2>
+            <h2 class="heading-font text-5xl font-bold text-center mb-24 italic underline underline-offset-[15px] decoration-blue-500">Выберите уровень влияния</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <div class="glass-card p-12 rounded-[3rem] border-white/5 flex flex-col items-center">
-                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-8 italic">Старт</span>
-                    <div class="text-5xl font-bold heading-font mb-4">₽990</div>
-                    <div class="text-[10px] text-slate-600 uppercase mb-12 italic">в месяц</div>
-                    <ul class="space-y-4 text-sm text-slate-400 mb-12 flex-grow italic text-center">
-                        <li>Доступ к 10 базовым моделям</li>
-                        <li>ChatGPT-4o + Claude Sonnet</li>
-                        <li>Лимит: 200 запросов/день</li>
-                    </ul>
-                    <button class="w-full glass-card py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 transition">Начать</button>
+                <div class="glass p-12 rounded-[3rem] border-white/5 flex flex-col items-center hover:scale-[1.02] transition-transform duration-500">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-10 italic">Solo Creator</span>
+                    <div class="text-6xl font-bold heading-font mb-4 italic">₽1,490</div>
+                    <div class="text-[10px] font-bold text-slate-600 uppercase mb-12 italic tracking-[0.3em]">Месяц / Доступ 24/7</div>
+                    <div class="w-full space-y-5 mb-16 text-sm italic text-slate-400">
+                        <div class="flex items-center gap-3"><span class="check-icon opacity-50"></span> ChatGPT 4o & Claude Sonnet</div>
+                        <div class="flex items-center gap-3"><span class="check-icon opacity-50"></span> 500 запросов в сутки</div>
+                        <div class="flex items-center gap-3"><span class="check-icon opacity-50"></span> Генерация до 50 фото (SDXL)</div>
+                        <div class="flex items-center gap-3 opacity-30"><span class="check-icon"></span> Доступ к Sora Video</div>
+                    </div>
+                    <button class="w-full py-5 rounded-2xl glass border-white/10 text-[10px] font-black uppercase tracking-widest hover:bg-white/5 transition">Начать путь</button>
                 </div>
 
-                <div class="glass-card p-12 rounded-[3rem] border-blue-500/30 bg-blue-500/[0.03] flex flex-col items-center relative scale-105 shadow-2xl">
-                    <div class="absolute -top-4 bg-blue-600 px-6 py-1 rounded-full text-[8px] font-black uppercase tracking-widest">Выбор 85% профи</div>
-                    <span class="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-8 italic">Ultimate 2026</span>
-                    <div class="text-5xl font-bold heading-font mb-4">₽2,490</div>
-                    <div class="text-[10px] text-slate-600 uppercase mb-12 italic">в месяц</div>
-                    <ul class="space-y-4 text-sm text-white mb-12 flex-grow italic text-center">
-                        <li>Полный доступ (25+ моделей)</li>
-                        <li>GPT-o1 + Sora X + MJ v7</li>
-                        <li>Приоритетная очередь</li>
-                        <li>API Key для разработчиков</li>
-                    </ul>
-                    <button class="w-full bg-blue-600 py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest shadow-xl shadow-blue-500/20 hover:bg-blue-500 transition">Активировать всё</button>
+                <div class="glass p-12 rounded-[3rem] border-blue-500/40 bg-blue-500/[0.03] flex flex-col items-center scale-110 shadow-3xl shadow-blue-500/10 relative">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 px-8 py-2 rounded-full text-[8px] font-black uppercase tracking-[0.3em] shadow-xl">Most Profitable</div>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-10 italic">Professional Hub</span>
+                    <div class="text-6xl font-bold heading-font mb-4 italic">₽3,850</div>
+                    <div class="text-[10px] font-bold text-slate-600 uppercase mb-12 italic tracking-[0.3em]">Месяц / Premium Node</div>
+                    <div class="w-full space-y-5 mb-16 text-sm italic text-white">
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> GPT-o1 & DeepSeek V3 (Uncensored)</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> Midjourney v7 (Fast GPU)</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> Безлимитные текстовые запросы</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> Приоритет в очереди Sora</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> Доступ к PRO-Библиотеке промптов</div>
+                    </div>
+                    <button class="w-full py-5 rounded-2xl bg-blue-600 text-[10px] font-black uppercase tracking-widest shadow-xl shadow-blue-600/30 hover:bg-blue-500 transition active:scale-95">Стать лидером рынка</button>
                 </div>
 
-                <div class="glass-card p-12 rounded-[3rem] border-white/5 flex flex-col items-center">
-                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-8 italic">Agency</span>
-                    <div class="text-5xl font-bold heading-font mb-4">₽7,900</div>
-                    <div class="text-[10px] text-slate-600 uppercase mb-12 italic">в месяц</div>
-                    <ul class="space-y-4 text-sm text-slate-400 mb-12 flex-grow italic text-center">
-                        <li>До 5 рабочих мест</li>
-                        <li>Полный безлимит</li>
-                        <li>Оплата по счету (B2B)</li>
-                        <li>Персональный ИИ-консультант</li>
-                    </ul>
-                    <button class="w-full glass-card py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 transition">Для команд</button>
+                <div class="glass p-12 rounded-[3rem] border-white/5 flex flex-col items-center hover:scale-[1.02] transition-transform duration-500">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-10 italic">Studio / Agency</span>
+                    <div class="text-6xl font-bold heading-font mb-4 italic">₽9,900</div>
+                    <div class="text-[10px] font-bold text-slate-600 uppercase mb-12 italic tracking-[0.3em]">Месяц / Full Scale</div>
+                    <div class="w-full space-y-5 mb-16 text-sm italic text-slate-400">
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> До 10 рабочих мест</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> Персональный API ключ</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> White-Label интерфейс</div>
+                        <div class="flex items-center gap-3"><span class="check-icon"></span> Поддержка личного ИИ-инженера</div>
+                    </div>
+                    <button class="w-full py-5 rounded-2xl glass border-white/10 text-[10px] font-black uppercase tracking-widest hover:bg-white/5 transition">Для команд</button>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <footer class="bg-black pt-32 pb-12 border-t border-white/5">
+    <section id="faq" class="py-32 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center mb-24 italic underline underline-offset-8 decoration-blue-500">Разбор сомнений</h2>
+            <div class="space-y-4">
+                
+                <details class="group glass p-8 rounded-3xl cursor-pointer hover:border-white/10 transition">
+                    <summary class="flex justify-between items-center text-xs font-black uppercase tracking-widest list-none">
+                        Нужно ли устанавливать VPN?
+                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
+                    </summary>
+                    <div class="mt-8 text-sm italic text-slate-500 leading-relaxed pt-8 border-t border-white/5">
+                        Категорически нет. Наша архитектура "Direct Path" 2026 года создает защищенный туннель между нашими дата-центрами и вашим браузером. Для вас сайт работает как любая российская соцсеть — мгновенно и без ограничений.
+                    </div>
+                </details>
+
+                <details class="group glass p-8 rounded-3xl cursor-pointer hover:border-white/10 transition">
+                    <summary class="flex justify-between items-center text-xs font-black uppercase tracking-widest list-none">
+                        Как происходит оплата из России?
+                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
+                    </summary>
+                    <div class="mt-8 text-sm italic text-slate-500 leading-relaxed pt-8 border-t border-white/5">
+                        Мы работаем через российские эквайринги. Принимаем карты МИР, Visa/Mastercard любых банков РФ, СБП и даже криптовалюту USDT для полной анонимности. Никаких зарубежных карт не требуется.
+                    </div>
+                </details>
+
+                <details class="group glass p-8 rounded-3xl cursor-pointer hover:border-white/10 transition">
+                    <summary class="flex justify-between items-center text-xs font-black uppercase tracking-widest list-none">
+                        Безопасны ли мои промпты и данные?
+                        <span class="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 group-open:rotate-180 transition">↓</span>
+                    </summary>
+                    <div class="mt-8 text-sm italic text-slate-500 leading-relaxed pt-8 border-t border-white/5">
+                        Мы используем Enterprise-протоколы. Ваши данные не передаются разработчикам ИИ для обучения. Всё, что вы создаете — ваша интеллектуальная собственность. Мы удаляем логи запросов каждые 24 часа.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-40 pb-12 border-t border-white/5 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-start gap-16 mb-24">
-                <div class="max-w-xs">
-                    <a href="#" class="heading-font text-2xl font-bold tracking-tighter mb-8 block uppercase italic">AI HUB <span class="text-blue-500">2026</span></a>
-                    <p class="text-slate-600 text-[10px] font-bold uppercase tracking-[0.2em] leading-relaxed italic">
-                        Мы создали этот портал, чтобы технологии будущего не имели границ. Безопасно, быстро, профессионально.
+            <div class="grid md:grid-cols-4 gap-20 mb-32">
+                <div class="col-span-2">
+                    <a href="#" class="heading-font text-4xl font-bold tracking-tighter uppercase mb-10 block italic">Nexus<span class="text-blue-500">AI</span></a>
+                    <p class="max-w-xs text-slate-500 text-xs font-bold leading-relaxed uppercase tracking-widest italic mb-12">
+                        Главный узел технологического превосходства. Мы объединяем мировые инновации, чтобы вы создавали будущее уже сегодня.
                     </p>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 glass rounded-2xl flex items-center justify-center hover:bg-blue-600 transition duration-500 cursor-pointer text-[10px] font-black">TG</div>
+                        <div class="w-12 h-12 glass rounded-2xl flex items-center justify-center hover:bg-blue-600 transition duration-500 cursor-pointer text-[10px] font-black">VC</div>
+                        <div class="w-12 h-12 glass rounded-2xl flex items-center justify-center hover:bg-blue-600 transition duration-500 cursor-pointer text-[10px] font-black">GH</div>
+                    </div>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-16">
-                    <div>
-                        <h5 class="text-[10px] font-black uppercase tracking-widest text-white mb-8">Навигация</h5>
-                        <ul class="space-y-4 text-[10px] font-bold text-slate-500 uppercase italic">
-                            <li><a href="#" class="hover:text-blue-400">Каталог</a></li>
-                            <li><a href="#" class="hover:text-blue-400">API шлюз</a></li>
-                            <li><a href="#" class="hover:text-blue-400">Статус сети</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5 class="text-[10px] font-black uppercase tracking-widest text-white mb-8">Право</h5>
-                        <ul class="space-y-4 text-[10px] font-bold text-slate-500 uppercase italic">
-                            <li><a href="#" class="hover:text-blue-400">Оферта</a></li>
-                            <li><a href="#" class="hover:text-blue-400">Конфиденциальность</a></li>
-                        </ul>
-                    </div>
+                <div>
+                    <h5 class="text-[10px] font-black uppercase tracking-widest text-white mb-10 italic">Продукты</h5>
+                    <ul class="space-y-5 text-[10px] font-bold text-slate-500 uppercase italic tracking-widest">
+                        <li><a href="#" class="hover:text-blue-400 underline decoration-white/5">ChatGPT o1 PRO</a></li>
+                        <li><a href="#" class="hover:text-blue-400 underline decoration-white/5">Midjourney V7 Hub</a></li>
+                        <li><a href="#" class="hover:text-blue-400 underline decoration-white/5">Sora Video Lab</a></li>
+                        <li><a href="#" class="hover:text-blue-400 underline decoration-white/5">Claude 4 Access</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-black uppercase tracking-widest text-white mb-10 italic">Информация</h5>
+                    <ul class="space-y-5 text-[10px] font-bold text-slate-500 uppercase italic tracking-widest">
+                        <li><a href="#" class="hover:text-blue-400">Партнерам</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Договор-оферта</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Контакты</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Статус сети</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] font-bold text-slate-800 uppercase tracking-[0.4em]">
-                <span>© 2026 AI HUB RUSSIA. FEDERAL TECH INDEPENDENCE.</span>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10 text-[9px] font-black text-slate-700 uppercase tracking-[0.5em] text-center">
+                <span>© 2026 NEXUS AI CORE LABORATORY. ALL RIGHTS SECURED.</span>
                 <div class="flex gap-8">
-                    <span class="text-blue-900 italic">SYSTEM VERSION 4.2.1-RELEASE</span>
+                    <span class="text-blue-900">v.1.9.44 Stable</span>
+                    <span>Direct-Tunnel Protocol Active</span>
                 </div>
             </div>
+        </div>
+        <div class="seo-cluster">
+            Лучшие нейросети 2026, искусственный интеллект для бизнеса в России, работа с ChatGPT без впн, купить токены нейросетей, генерация видео с помощью ИИ, профессиональный промпт инжиниринг.
         </div>
     </footer>
 
     <script>
-        // Фильтрация моделей
-        function filterModels(category) {
-            const cards = document.querySelectorAll('#modelsGrid article');
-            const buttons = document.querySelectorAll('#catalog button');
-            
-            // Обновляем кнопки
-            buttons.forEach(btn => {
-                btn.classList.remove('active-tab');
-                btn.classList.add('text-slate-500');
-            });
-            event.target.classList.add('active-tab');
-            event.target.classList.remove('text-slate-500');
+        // 1. Loader Removal
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => loader.style.display = 'none', 1000);
+            }, 800);
+        });
 
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                    card.style.opacity = '1';
-                } else {
-                    card.style.display = 'none';
-                    card.style.opacity = '0';
-                }
-            });
-        }
+        // 2. Social Proof Simulation (The cunning trick)
+        const notifications = [
+            { user: 'Алексей (Москва)', action: 'активировал тариф Professional Hub' },
+            { user: 'Марина (СПб)', action: 'сгенерировала видео в Sora X' },
+            { user: 'Digital Studio', action: 'подключили B2B шлюз Nexus API' },
+            { user: 'Константин', action: 'купил подписку на Claude 4 Opus' },
+            { user: 'Екатерина (Казань)', action: 'запустила рендер в Midjourney v7' }
+        ];
 
-        // Психологический триггер: Уведомления о покупках
-        function showSaleNotification() {
-            const cities = ['Москве', 'Санкт-Петербурге', 'Краснодаре', 'Казани', 'Екатеринбурге'];
-            const plans = ['Ultimate 2026', 'Agency пакет', 'Pro доступ'];
-            const city = cities[Math.floor(Math.random() * cities.length)];
-            const plan = plans[Math.floor(Math.random() * plans.length)];
-            
-            const notify = document.createElement('div');
-            notify.className = 'fixed bottom-8 left-8 glass-card px-6 py-4 rounded-2xl shadow-2xl z-[500] flex items-center gap-4 animate-fade-in border-blue-500/20';
-            notify.innerHTML = `
-                <div class="w-2 h-2 rounded-full bg-blue-500 animate-ping"></div>
-                <div class="text-[9px] font-bold uppercase tracking-widest italic">
-                    <span class="text-white">Новая активация в ${city}:</span> <br>
-                    <span class="text-blue-400">${plan}</span>
+        function createToast() {
+            const data = notifications[Math.floor(Math.random() * notifications.length)];
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-10 left-10 glass px-8 py-5 rounded-2xl shadow-3xl z-[5000] border-blue-500/20 animate-fade-up';
+            toast.innerHTML = `
+                <div class="flex items-center gap-4">
+                    <div class="w-3 h-3 bg-blue-500 rounded-full animate-ping"></div>
+                    <div class="text-[10px] font-black uppercase tracking-widest leading-tight">
+                        <span class="text-white">${data.user}</span> <br>
+                        <span class="text-slate-500 italic">${data.action}</span>
+                    </div>
                 </div>
             `;
-            document.body.appendChild(notify);
+            document.body.appendChild(toast);
+            
             setTimeout(() => {
-                notify.style.opacity = '0';
-                notify.style.transform = 'translateY(20px)';
-                setTimeout(() => notify.remove(), 1000);
-            }, 4000);
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(20px)';
+                setTimeout(() => toast.remove(), 1000);
+            }, 5000);
         }
-        
-        // Запуск через 10 секунд после входа
-        setTimeout(() => {
-            setInterval(showSaleNotification, 15000);
-        }, 10000);
+
+        // Показываем уведомление каждые 25 секунд
+        setInterval(createToast, 25000);
+
+        // 3. Smooth Header Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav div');
+            if (window.scrollY > 100) {
+                nav.style.paddingTop = '12px';
+                nav.style.paddingBottom = '12px';
+            } else {
+                nav.style.paddingTop = '16px';
+                nav.style.paddingBottom = '16px';
+            }
+        });
+
+        // 4. Console log for Devs (Bonus authority)
+        console.log("%cNEXUS AI CORE v1.9.4", "color: #3b82f6; font-size: 20px; font-weight: bold;");
+        console.log("Direct-Path Protocol initialized. Security: AES-256. Connection: STABLE.");
     </script>
 
     <style>
-        @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fade-in { animation: fade-in 0.8s ease-out forwards; }
+        /* Fade Up Animation for Toasts */
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up { animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
     </style>
 
 </body>
-                            </html>
+</html>
